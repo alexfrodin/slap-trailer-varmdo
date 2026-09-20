@@ -1,8 +1,8 @@
 export const trailerTypes = [
-  'Båtsläp',
-  'Släpkärra',
-  'Maskinsläp',
-  'Hästtransport',
+  'Båttrailer',
+  'Släpvagn',
+  'Maskintransportsläp',
+  'Hästtransportsläp',
   'Annat',
 ] as const;
 

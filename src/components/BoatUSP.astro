@@ -1,6 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import { home } from '../data/home';
-import TrailerMark from './icons/TrailerMark.astro';
+import trailerImage from '../assets/photos/slapkarra-illustration.png';
 
 interface Props {
   compact?: boolean;
@@ -28,8 +29,14 @@ const { compact = false } = Astro.props;
       )}
     </div>
     {!compact && (
-      <div class="border border-[#7a938b] p-8 text-[#d7e3de]">
-        <TrailerMark class="w-full opacity-80" />
+      <div class="flex items-center justify-center">
+        <Image
+          src={trailerImage}
+          alt="Linjeteckning av släpkärra"
+          widths={[480, 768, 1100]}
+          sizes="(min-width: 768px) 45vw, 100vw"
+          class="h-auto w-full mix-blend-screen"
+        />
       </div>
     )}
   </div>
