@@ -41,19 +41,19 @@ export const home = {
       text: 'Vi gör jobbet i verkstaden och hör av oss när det är klart. Pris efter genomgång.',
     },
   ],
-  whyHeading: 'En verkstad, inte en callcenter-sida',
+  whyHeading: 'En lokal verkstad på Värmdö',
   why: [
     {
-      title: 'Vi jobbar med släp på riktigt',
-      text: 'Lager, bromsar, el och svets. Inte en förmedling vidare till någon annan.',
+      title: 'Service och reparation på plats',
+      text: 'Vi hjälper dig med hjullager, bromsar, el, belysning, svetsning och andra vanliga reparationer av släp och trailers.',
     },
     {
-      title: 'Båtsläp är en del av jobbet',
-      text: 'Inte ett sidospår. Rullar, vinsch och lager efter rampkörning är vardag.',
+      title: 'Erfarenhet av olika typer av släp',
+      text: 'Vi arbetar med både vanliga släpvagnar och båtsläp och hjälper till med allt från löpande service till felsökning och reparation.',
     },
     {
-      title: 'Du når verkstaden på Värmdö',
-      text: 'Samma nummer som på sidan. Ingen växel, ingen chattbot.',
+      title: 'Direkt kontakt med verkstaden',
+      text: 'När du hör av dig kommer du i kontakt med oss som gör jobbet. Enkelt, personligt och utan onödiga mellanhänder.',
     },
   ],
   areaHeading: 'Värmdö och närområdet',

@@ -643,11 +643,11 @@ No calendar widget. No “book a slot” fiction.
 
 ### 5.7 Why this workshop (short)
 
-Heading: `En verkstad, inte en callcenter-sida`
+Heading: `En lokal verkstad på Värmdö`
 
 Three concrete points, not values-theatre:
 
-- Vi jobbar med släp på riktigt — lager, bromsar, el och svets.  
+- Service och reparation på plats — lager, bromsar, el och svets.  
 - Båtsläp är en naturlig del av arbetet, inte ett sidospår.  
 - Du pratar med verkstaden på Värmdö.
 

@@ -53,7 +53,7 @@ export const services: Service[] = [
         'Däck, lufttryck och synliga skador på ram och fästen',
       ],
       notes: [
-        'Vi tar emot vanliga släpvagnar också. Båtsläp är en del av jobbet, inte hela verksamheten.',
+        'Vi tar emot vanliga släpvagnar också. Erfarenhet av olika typer av släp, inte hela verksamheten.',
         'Bekräfta gärna om båten redan är inne på service, så kan vi ofta se över trailern samtidigt.',
       ],
     },
