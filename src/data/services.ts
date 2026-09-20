@@ -260,10 +260,6 @@ export const services: Service[] = [
         'Lagar fästen, skärmar och andra detaljer som går att rädda',
         'Säger till om ramen är så rostig att det inte är värt att laga',
       ],
-      notes: [
-        'Vi lovar inte att varje rostig ram går att rädda. Först tittar vi, sedan ger vi ett upplägg.',
-        'Vi utför inte karosseriarbete på bilar.',
-      ],
     },
     faqs: [
       {
