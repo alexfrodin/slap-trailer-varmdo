@@ -20,10 +20,15 @@
     "@vercel/analytics": "^2.0.1",
     "astro": "^7.3.3",
     "resend": "^6.28.1",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4.3.3"
   },
   "allowScripts": {
-    "esbuild": true
+    "esbuild": true,
+    "sharp": true
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp"]
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
