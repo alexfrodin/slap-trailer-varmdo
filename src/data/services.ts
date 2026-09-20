@@ -137,8 +137,8 @@ export const services: Service[] = [
   {
     slug: 'bromsservice-slapvagn',
     navLabel: 'Bromsar',
-    cardTitle: 'Bromsar & påskjutare',
-    cardBlurb: 'Påskjutsbroms, vajrar, backar och parkeringsbroms.',
+    cardTitle: 'Bromsar & påskjutsbroms',
+    cardBlurb: 'Påskjutsbroms, vajrar, bromsbackar och parkeringsbroms.',
     h1: 'Bromsar och påskjutare till släpvagn',
     title: 'Bromsservice för släpvagn',
     description:

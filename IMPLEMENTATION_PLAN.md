@@ -600,7 +600,7 @@ Six cards (same data as service pages):
 | Card title | Links to |
 |---|---|
 | Hjullager & nav | `/hjullager-slapvagn` |
-| Bromsar & påskjutare | `/bromsservice-slapvagn` |
+| Bromsar & påskjutsbroms | `/bromsservice-slapvagn` |
 | El & belysning | `/el-belysning-slapvagn` |
 | Svetsning & reparation | `/svetsning-slapvagn` |
 | Båtsläp | `/batslap-service` |
