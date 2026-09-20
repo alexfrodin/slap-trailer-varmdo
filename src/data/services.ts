@@ -144,7 +144,7 @@ export const services: Service[] = [
         'Dålig eller ingen bromsverkan',
         'Parkeringsbromsen tar inte eller släpper inte',
         'Vajrar som kärvar, är frätta eller har släppt',
-        'påskjutsbromsn går trögt eller tar inte i',
+        'Påskjutsbromsen går trögt eller tar inte',
       ],
       whatWeDoTitle: 'Vad vi gör',
       whatWeDo: [
