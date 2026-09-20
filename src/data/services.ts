@@ -161,7 +161,7 @@ export const services: Service[] = [
     faqs: [
       {
         q: 'Hur vet jag att påskjutsbromsen är dålig?',
-        a: 'Släpet kan nicka, dra snett, rulla på vid inbromsning eller ha en påskjutsbroms som inte går lätt. Ibland tar handbromsen inte heller.',
+        a: 'Tecken på problem kan vara att släpet bromsar ojämnt, drar snett eller stöter till vid inbromsning. Påskjutsbromsen kan också kännas trög eller kärva, och handbromsen kan ta dåligt. Är du osäker kan vi kontrollera bromssystemet åt dig.',
       },
       {
         q: 'Kan ni byta bromsvajrar?',
