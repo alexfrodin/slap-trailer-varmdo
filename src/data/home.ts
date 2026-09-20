@@ -13,7 +13,7 @@ export const home = {
   ],
   servicesHeading: 'Vad vi hjälper dig med',
   boat: {
-    heading: 'Lämna båten på service – vi går igenom trailern samtidigt',
+    heading: 'Service och reparation av släp och trailers',
     body: 'Om båten redan är inne på service kan vi se över trailern i samma veva. Vatten och ramper sliter på hjullager, bromsar, belysning, vinsch, rullar, däck och stödhjul. Säg till när du hör av dig.',
     cta: 'Läs mer om båtsläp',
     checks: [

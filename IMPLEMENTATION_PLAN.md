@@ -614,7 +614,7 @@ Each card: short Swedish sentence (symptoms or outcome), not a keyword dump. Ent
 
 ### 5.5 Boat trailer USP
 
-Heading: `Lämna båten på service – vi går igenom trailern samtidigt`  
+Heading: `Service och reparation av släp och trailers`  
 *(swap heading if the shared-yard assumption is false: `Vi kan släp – och vi kan båtsläp`)*
 
 Body: 2–4 sentences. List the check: hjullager, bromsar, belysning, vinsch, rullar, däck, stödhjul.
