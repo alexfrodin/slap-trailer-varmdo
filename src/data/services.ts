@@ -149,7 +149,7 @@ export const services: Service[] = [
       whatWeDoTitle: 'Vad vi gör',
       whatWeDo: [
         'Felsöker påskjutsbroms och justerar när det går',
-        'Byter bromsvajrar, backar och andra slitdelar',
+        'Byter bromsvajrar, bromsbackar och andra slitna delar',
         'Ser över parkeringsbroms',
         'Kontrollerar att hjulen rullar fritt efter justering',
         'Kombinerar gärna med lagerkontroll om släpet ändå är uppe',
