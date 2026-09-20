@@ -59,7 +59,6 @@ export const home = {
   areaHeading: 'Värmdö med omnejd – och hjälp ute på plats',
   formHeading: 'Skicka en serviceförfrågan',
   formLead: 'Beskriv kort vad du behöver hjälp med.',
-  callAsideHeading: 'Snabbare att ringa?',
   locationHeading: 'Hitta hit',
   faqs: [
     {

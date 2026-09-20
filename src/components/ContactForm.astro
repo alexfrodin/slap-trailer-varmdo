@@ -2,29 +2,22 @@
 import { cta, home } from '../data/home';
 import { trailerTypes } from '../lib/validation';
 import CTAButton from './CTAButton.astro';
-import PhoneLink from './PhoneLink.astro';
 
 interface Props {
   heading?: string;
   lead?: string;
-  showCallAside?: boolean;
 }
 
-const {
-  heading = home.formHeading,
-  lead = home.formLead,
-  showCallAside = true,
-} = Astro.props;
+const { heading = home.formHeading, lead = home.formLead } = Astro.props;
 
 const error = Astro.url.searchParams.get('fel');
 const turnstileKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 ---
 
 <section id="forfragan" class="section scroll-mt-24 bg-elevated">
-  <div class:list={['wrap grid gap-10', showCallAside && 'md:grid-cols-[1.2fr_0.8fr]']}>
-    <div>
-      <h2 class="text-2xl font-semibold md:text-3xl">{heading}</h2>
-      <p class="mt-3 text-muted">{lead}</p>
+  <div class="wrap max-w-2xl">
+    <h2 class="text-2xl font-semibold md:text-3xl">{heading}</h2>
+    <p class="mt-3 text-muted">{lead}</p>
 
       {error && (
         <p class="mt-4 border border-cta px-4 py-3 text-cta" role="alert">
@@ -134,17 +127,6 @@ const turnstileKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
           <CTAButton type="submit">{cta.send}</CTAButton>
         </div>
       </form>
-    </div>
-
-    {showCallAside && (
-      <aside class="hidden border border-line bg-surface p-6 md:block">
-        <h3 class="text-xl font-semibold">{home.callAsideHeading}</h3>
-        <p class="mt-3 text-muted">Samma nummer som i menyn. Vi svarar när vi kan lämna jobbet.</p>
-        <p class="mt-4">
-          <PhoneLink class="text-2xl font-semibold text-accent no-underline" />
-        </p>
-      </aside>
-    )}
   </div>
 </section>
 
