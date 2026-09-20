@@ -202,10 +202,10 @@ export const services: Service[] = [
       ],
       whatWeDoTitle: 'Vad vi gör',
       whatWeDo: [
-        'Felsöker belysning, kablar och jord',
+        'Felsöker belysning och kablage',
         'Byter lampor, kontakter och skadade sladdar',
-        'Rensar och lagar släpkontakt',
-        'Letar jordfel som tar säkringar i bilen',
+        'Lagar/byter släpkontakt',
+        'Felsökning av jordfel och elfel som kan orsaka att säkringar går.',
         'Kollar att belysningen är hel inför besiktning',
       ],
       notes: [
@@ -250,16 +250,15 @@ export const services: Service[] = [
       symptoms: [
         'Spruckna fästen och konsoler',
         'Stänkskärmar som släppt eller spruckit',
-        'Stödben och stöd som slakat',
+        'Lösa eller slitna stödben och stöd',
         'Mindre sprickor i ram och tvärbalkar',
         'Fästen till vinsch, rullar eller stöttor på båttrailer',
       ],
       whatWeDoTitle: 'Hur vi jobbar',
       whatWeDo: [
-        'Tittar på skadan innan vi lovar svets',
+        'Vi bedömer skadan först och avgör därefter om svetsning är rätt lösning',
         'Lagar fästen, skärmar och andra detaljer som går att rädda',
         'Säger till om ramen är så rostig att det inte är värt att laga',
-        'Kan ofta kombinera svets med annan service på samma släp',
       ],
       notes: [
         'Vi lovar inte att varje rostig ram går att rädda. Först tittar vi, sedan ger vi ett upplägg.',

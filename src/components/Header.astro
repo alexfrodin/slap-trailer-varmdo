@@ -20,10 +20,10 @@ const { bookHref } = Astro.props;
     </a>
 
     <nav class="hidden items-center gap-6 lg:flex" aria-label="Huvudmeny">
-      <div class="relative group">
+      <div class="group relative" data-services-menu>
         <button
           type="button"
-          class="inline-flex items-center gap-1 bg-transparent p-0 text-base font-medium text-ink"
+          class="inline-flex items-center gap-1 bg-transparent py-2 text-base font-medium text-ink"
           aria-expanded="false"
           aria-haspopup="true"
           data-services-toggle
@@ -31,17 +31,19 @@ const { bookHref } = Astro.props;
           {nav.services}
           <span aria-hidden="true">▾</span>
         </button>
-        <ul
-          class="invisible absolute left-0 top-full z-50 mt-2 min-w-52 border border-line bg-elevated py-2 opacity-0 shadow-none transition-opacity group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
+        <div
+          class="invisible absolute left-0 top-full z-50 pt-1 opacity-0 transition-opacity delay-150 duration-100 group-hover:visible group-hover:opacity-100 group-hover:delay-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:delay-0"
         >
-          {serviceLinks.map((link) => (
-            <li>
-              <a class="block px-4 py-2 text-ink no-underline hover:bg-surface" href={link.href}>
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+          <ul class="min-w-52 border border-line bg-elevated py-2">
+            {serviceLinks.map((link) => (
+              <li>
+                <a class="block px-4 py-2 text-ink no-underline hover:bg-surface" href={link.href}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       {headerLinks.map((link) => (
         <a class="font-medium text-ink no-underline hover:underline" href={link.href}>
@@ -82,3 +84,17 @@ const { bookHref } = Astro.props;
     </div>
   </div>
 </header>
+
+<script>
+  const menu = document.querySelector<HTMLElement>('[data-services-menu]');
+  const toggle = menu?.querySelector<HTMLButtonElement>('[data-services-toggle]');
+  if (menu && toggle) {
+    const sync = () => {
+      toggle.setAttribute('aria-expanded', String(menu.matches(':hover, :focus-within')));
+    };
+    menu.addEventListener('mouseenter', sync);
+    menu.addEventListener('mouseleave', sync);
+    menu.addEventListener('focusin', sync);
+    menu.addEventListener('focusout', sync);
+  }
+</script>
