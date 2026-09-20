@@ -1,5 +1,5 @@
 ---
-import { formattedAddress, isPlaceholder, site } from '../data/site';
+import { formattedAddress, isPlaceholder, osmEmbedUrl, site } from '../data/site';
 import { home, nav } from '../data/home';
 
 interface Props {
@@ -31,12 +31,14 @@ const showMapLink = !isPlaceholder(site.mapsUrl);
         </p>
       )}
     </div>
-    <div
-      class="flex min-h-52 items-end border border-line bg-accent p-5 text-sm text-[#d7e3de]"
-      role="img"
-      aria-label={`Karta över verkstaden på ${formattedAddress()}`}
-    >
-      Värmdö · {site.address.city}
+    <div class="min-h-64 overflow-hidden border border-line md:min-h-80">
+      <iframe
+        title={`Karta över verkstaden på ${formattedAddress()}`}
+        src={osmEmbedUrl()}
+        class="h-full min-h-64 w-full border-0 md:min-h-80"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
     </div>
   </div>
 </section>

@@ -68,3 +68,16 @@ export function formattedAddress(): string {
 export function legalLine(): string {
   return `${site.brandName} är ett varumärke som drivs av ${site.legalName}, org.nr ${site.orgNumber}.`;
 }
+
+export function osmEmbedUrl(): string {
+  const lat = Number(site.geo.lat);
+  const lng = Number(site.geo.lng);
+  const pad = 0.0045;
+  const bbox = [lng - pad, lat - pad * 0.55, lng + pad, lat + pad * 0.55].join(',');
+  const params = new URLSearchParams({
+    bbox,
+    layer: 'mapnik',
+    marker: `${lat},${lng}`,
+  });
+  return `https://www.openstreetmap.org/export/embed.html?${params}`;
+}
