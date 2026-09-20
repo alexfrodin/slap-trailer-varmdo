@@ -272,7 +272,7 @@ export const services: Service[] = [
       },
       {
         q: 'Behöver jag ha med reservdelar?',
-        a: 'Inte nödvändigtvis. Har du delar eller vet märke och modell underlättar det. Annars löser vi det efter bedömning.',
+        a: 'Nej',
       },
       {
         q: 'Kan ni laga stänkskärmar och stödben?',
