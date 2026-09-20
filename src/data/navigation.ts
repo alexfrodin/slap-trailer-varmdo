@@ -6,8 +6,7 @@ export const serviceLinks = services.map((service) => ({
 }));
 
 export const headerLinks = [
-  { href: '/batslap-service', label: 'båttrailer' },
-  { href: '/infor-besiktning', label: 'Inför besiktning' },
+  { href: '/batslap-service', label: 'Båttrailer' },
   { href: '/kontakt', label: 'Kontakt' },
 ];
 

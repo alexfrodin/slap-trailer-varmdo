@@ -25,8 +25,8 @@ export type Service = {
 export const services: Service[] = [
   {
     slug: 'batslap-service',
-    navLabel: 'båttrailer',
-    cardTitle: 'båttrailer',
+    navLabel: 'Båttrailer',
+    cardTitle: 'Båttrailer',
     cardBlurb: 'Rullar, vinsch, stödhjul, lager, bromsar och belysning.',
     h1: 'Service och reparation av båttrailer',
     title: 'båttrailer service på Värmdö',
@@ -122,7 +122,7 @@ export const services: Service[] = [
         a: 'Ett rakt lagerbyte är ofta ett kortare jobb. Om navet är skadat, bultar har skurit eller delarna måste beställas tar det längre tid. Vi säger till när vi sett släpet.',
       },
     ],
-    relatedSlugs: ['bromsservice-slapvagn', 'batslap-service', 'infor-besiktning'],
+    relatedSlugs: ['bromsservice-slapvagn', 'batslap-service', 'el-belysning-slapvagn'],
     schemaServiceType: 'Hjullagerbyte släpvagn',
     adsGroup: 'Wheel bearings',
   },
@@ -176,7 +176,7 @@ export const services: Service[] = [
         a: 'Inte alltid. En justering kan gå snabbt. Byte av vajrar eller backar tar längre tid. Vi stämmer av när du hör av dig.',
       },
     ],
-    relatedSlugs: ['hjullager-slapvagn', 'infor-besiktning', 'batslap-service'],
+    relatedSlugs: ['hjullager-slapvagn', 'el-belysning-slapvagn', 'batslap-service'],
     schemaServiceType: 'Bromsservice släpvagn',
     adsGroup: 'Brakes',
   },
@@ -230,7 +230,7 @@ export const services: Service[] = [
         a: 'Ja, särskilt på släp som står ute eller båttrailer som kommer nära vatten. Kontakt och jord är första stället vi tittar.',
       },
     ],
-    relatedSlugs: ['infor-besiktning', 'batslap-service', 'bromsservice-slapvagn'],
+    relatedSlugs: ['svetsning-slapvagn', 'batslap-service', 'bromsservice-slapvagn'],
     schemaServiceType: 'El och belysning släpvagn',
     adsGroup: 'Electrics',
   },
@@ -284,65 +284,9 @@ export const services: Service[] = [
         a: 'Ja, det är typiska jobb.',
       },
     ],
-    relatedSlugs: ['infor-besiktning', 'batslap-service', 'hjullager-slapvagn'],
+    relatedSlugs: ['el-belysning-slapvagn', 'batslap-service', 'hjullager-slapvagn'],
     schemaServiceType: 'Svetsning släpvagn',
     adsGroup: 'Welding',
-  },
-  {
-    slug: 'infor-besiktning',
-    navLabel: 'Inför besiktning',
-    cardTitle: 'Inför besiktning',
-    cardBlurb: 'Genomgång av belysning, bromsar, däck och vanliga anmärkningar.',
-    h1: 'Inför besiktning av släpvagn',
-    title: 'Kontroll av släpvagn inför besiktning',
-    description:
-      'Vi går igenom belysning, bromsar, däck och vanliga anmärkningar innan besiktning. Lämna släpet på Värmdö.',
-    heroLead:
-      'Vi går igenom släpet innan besiktning och lagar det som brukar ge anmärkning – belysning, bromsar, däck och synliga fel.',
-    sections: {
-      symptomsTitle: 'Sådant som ofta ger anmärkning',
-      symptoms: [
-        'Trasig eller svag belysning',
-        'Dåliga bromsar eller vajrar som kärvar',
-        'Däck med dåligt mönster eller sprickor',
-        'Rost och lösa detaljer',
-        'Skadad släpkontakt eller saknade lampglas',
-      ],
-      whatWeDoTitle: 'Vad vi kontrollerar',
-      whatWeDo: [
-        'Belysning och släpkontakt',
-        'Bromsar, påskjutsbroms och handbroms där det finns',
-        'Däck och hjul',
-        'Synlig rost, fästen och säkerhetsdetaljer',
-        'Lagning av det som behöver åtgärdas innan du åker på besiktning',
-      ],
-      notes: [
-        'Vi är inte ett besiktningsbolag. Vi förbereder släpet. Den lagstadgade besiktningen görs hos ett besiktningsföretag.',
-      ],
-    },
-    notice:
-      'Vi utför inte den officiella besiktningen. Vi går igenom släpet och lagar vanliga fel innan du åker till besiktningen.',
-    faqs: [
-      {
-        q: 'Kan ni kontrollera släpet inför besiktning?',
-        a: 'Ja. Vi går igenom belysning, bromsar, däck och andra vanliga fel och lagar det som behövs.',
-      },
-      {
-        q: 'Är det samma sak som besiktning?',
-        a: 'Nej. Vi förbereder släpet. Besiktningen görs hos ett besiktningsföretag.',
-      },
-      {
-        q: 'Hur lång tid innan bör jag lämna in?',
-        a: 'Så fort du vet datum är bra, särskilt om delar kan behöva beställas. Belysning och enklare fel går ofta snabbt.',
-      },
-      {
-        q: 'Kan ni laga det som behövs innan?',
-        a: 'Ja, det är poängen. Du lämnar släpet, vi åtgärdar det vi hittar och stämmer av innan du åker vidare.',
-      },
-    ],
-    relatedSlugs: ['el-belysning-slapvagn', 'bromsservice-slapvagn', 'hjullager-slapvagn'],
-    schemaServiceType: 'Kontroll inför besiktning av släpvagn',
-    adsGroup: 'Inspection prep',
   },
 ];
 
