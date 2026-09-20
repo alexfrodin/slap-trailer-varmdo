@@ -14,7 +14,7 @@ export const home = {
   servicesHeading: 'Vad vi hjälper dig med',
   boat: {
     heading: 'Service och reparation av släp och trailers',
-    body: 'Om båten redan är inne på service kan vi se över trailern i samma veva. Vatten och ramper sliter på hjullager, bromsar, belysning, vinsch, rullar, däck och stödhjul. Säg till när du hör av dig.',
+    body: 'Regelbunden service minskar risken för problem och onödiga reparationer. Vi kontrollerar och servar bland annat hjullager, bromsar, belysning, vinsch, rullar, däck och stödhjul. Hör av dig så hjälper vi dig att gå igenom släpet och åtgärda det som behövs.',
     cta: 'Läs mer om båtsläp',
     checks: [
       'Hjullager',
