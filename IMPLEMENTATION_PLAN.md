@@ -295,14 +295,14 @@ Shared **primary CTAs** unless a page says otherwise:
 **Primary topic:** båtsläp service Värmdö.
 
 **Title:** `Båtsläp service på Värmdö | Släp & Trailer Värmdö`  
-**Meta:** `Service av båtsläp på Värmdö: rullar, vinsch, stödjehjul, hjullager, bromsar och belysning. Lämna gärna trailern när båten är inne.`  
+**Meta:** `Service av båtsläp på Värmdö: rullar, vinsch, stödhjul, hjullager, bromsar och belysning. Lämna gärna trailern när båten är inne.`  
 **H1:** `Service och reparation av båtsläp`
 
 **Sections:**
 
 1. Compact hero + CTAs  
 2. USP: *Lämna båten på service – låt oss gå igenom trailern samtidigt.* (only if assumption 2 is true)  
-3. What we check on a boat trailer: rullar, vinsch, stödjehjul, hjullager, bromsar, belysning, däck  
+3. What we check on a boat trailer: rullar, vinsch, stödhjul, hjullager, bromsar, belysning, däck  
 4. Water-launch wear (bearings/brakes after ramp use)  
 5. Process / drop-off  
 6. Link out: still welcome ordinary släp — “Vi servar även vanliga släpvagnar” → `/`  
@@ -617,7 +617,7 @@ Each card: short Swedish sentence (symptoms or outcome), not a keyword dump. Ent
 Heading: `Lämna båten på service – vi går igenom trailern samtidigt`  
 *(swap heading if the shared-yard assumption is false: `Vi kan släp – och vi kan båtsläp`)*
 
-Body: 2–4 sentences. List the check: hjullager, bromsar, belysning, vinsch, rullar, däck, stödjehjul.
+Body: 2–4 sentences. List the check: hjullager, bromsar, belysning, vinsch, rullar, däck, stödhjul.
 
 CTA text link: `Läs mer om båtsläp` → `/batslap-service`
 

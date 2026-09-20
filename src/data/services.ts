@@ -27,11 +27,11 @@ export const services: Service[] = [
     slug: 'batslap-service',
     navLabel: 'Båtsläp',
     cardTitle: 'Båtsläp',
-    cardBlurb: 'Rullar, vinsch, stödjehjul, lager, bromsar och belysning.',
+    cardBlurb: 'Rullar, vinsch, stödhjul, lager, bromsar och belysning.',
     h1: 'Service och reparation av båtsläp',
     title: 'Båtsläp service på Värmdö',
     description:
-      'Service av båtsläp på Värmdö: rullar, vinsch, stödjehjul, hjullager, bromsar och belysning. Lämna gärna trailern när båten är inne.',
+      'Service av båtsläp på Värmdö: rullar, vinsch, stödhjul, hjullager, bromsar och belysning. Lämna gärna trailern när båten är inne.',
     heroLead:
       'Båtsläp slits extra hårt av vatten, salt och ramper. Vi går igenom trailern i verkstaden på Värmdö.',
     sections: {
@@ -40,7 +40,7 @@ export const services: Service[] = [
         'Hjul som låter, glappar eller går trögt efter sjösättning',
         'Rullar som inte snurrar eller har spruckit',
         'Vinsch som slirar, hakar eller har sliten lina',
-        'Stödjehjul som kärvar eller sitter löst',
+        'stödhjul som kärvar eller sitter löst',
         'Belysning som slocknar när släpet varit i vattnet',
       ],
       whatWeDoTitle: 'Vad vi går igenom på ett båtsläp',
@@ -49,7 +49,7 @@ export const services: Service[] = [
         'Bromsar och påskjutare där släpet har broms',
         'Belysning, släpkontakt och jordfel',
         'Vinsch, lina och fästen',
-        'Rullar, stöttor och stödjehjul',
+        'Rullar, stöttor och stödhjul',
         'Däck, lufttryck och synliga skador på ram och fästen',
       ],
       notes: [
@@ -64,7 +64,7 @@ export const services: Service[] = [
       },
       {
         q: 'Kan ni byta rullar och vinsch?',
-        a: 'Ja. Vi byter rullar, ser över vinsch och stödjehjul och lagar fästen när det behövs.',
+        a: 'Ja. Vi byter rullar, ser över vinsch och stödhjul och lagar fästen när det behövs.',
       },
       {
         q: 'Behöver trailern vara tom?',
