@@ -49,7 +49,7 @@ export const home = {
     },
     {
       title: 'Vi hjälper dig med de flesta släp',
-      text: 'Service, felsökning och reparation av både släpvagnar och båtsläp.',
+      text: 'Service, felsökning och reparation av både släpvagnar och båttrailer.',
     },
     {
       title: 'Direkt kontakt med verkstaden',
