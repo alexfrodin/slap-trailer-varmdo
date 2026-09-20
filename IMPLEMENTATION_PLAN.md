@@ -673,7 +673,7 @@ Heading: `Värmdö med omnejd – och hjälp ute på plats`
 
 Copy model:
 
-> Vår verkstad finns på Värmdö, men alla är självklart välkomna oavsett varifrån du kommer. Vi hjälper kunder från hela närområdet och kan även utföra vissa service- och reparationsarbeten ute på plats när det passar bättre än att ta släpet till verkstaden.
+>  Vi hjälper kunder från hela närområdet och kan även utföra vissa service- och reparationsarbeten ute på plats när det passar bättre än att ta släpet till verkstaden.
 
 Hör av dig och berätta vad du behöver hjälp med, så hittar vi en lösning som passar.
 
