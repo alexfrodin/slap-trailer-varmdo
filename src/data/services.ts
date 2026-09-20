@@ -165,7 +165,7 @@ export const services: Service[] = [
       },
       {
         q: 'Kan ni byta bromsvajrar?',
-        a: 'Ja. Vajrar som kärvar eller är frätta är ett vanligt jobb, särskilt på släp som står ute.',
+        a: 'Ja. Vajrar som kärvar eller är frätta är ett vanligt jobb.',
       },
       {
         q: 'Tar ni båttrailer med bromsar?',
