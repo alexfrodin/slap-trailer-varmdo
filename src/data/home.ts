@@ -64,7 +64,7 @@ export const home = {
   faqs: [
     {
       q: 'Vilka släp tar ni emot?',
-      a: 'Vanliga släpkärror, båtsläp och liknande lätta släp. Har du ett tyngre eller udda släp – ring så säger vi om det passar.',
+      a: 'Släpkärror, båtsläp, hästtransport, maskinsläp och liknande lätta släp. Har du ett tyngre eller udda släp – ring så säger vi om det passar.',
     },
     {
       q: 'Behöver jag boka tid?',
