@@ -281,7 +281,7 @@ Shared **primary CTAs** unless a page says otherwise:
 
 - Vilka släp tar ni emot?
 - Behöver jag boka tid?
-- Kan ni titta på båtsläpet när båten är inne på service?
+- Kan ni serva och reparera båtsläp?
 - Tar ni emot släp från Nacka och Ingarö?
 
 ---
@@ -669,11 +669,13 @@ If photos are missing at build time, omit the section. Never ship stock-people-w
 
 ### 5.9 Geographic coverage
 
-Heading: `Värmdö och närområdet`
+Heading: `Värmdö med omnejd – och hjälp ute på plats`
 
 Copy model:
 
-> Verkstaden ligger på Värmdö. Du är välkommen med släpet hit oavsett om du kommer från Gustavsberg, Ingarö, Nacka eller östra Stockholm.
+> Vår verkstad finns på Värmdö, men alla är självklart välkomna oavsett varifrån du kommer. Vi hjälper kunder från hela närområdet och kan även utföra vissa service- och reparationsarbeten ute på plats när det passar bättre än att ta släpet till verkstaden.
+
+Hör av dig och berätta vad du behöver hjälp med, så hittar vi en lösning som passar.
 
 Do not list 20 islands. Do not imply a service-area business that drives to the customer.
 

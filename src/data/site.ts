@@ -46,7 +46,9 @@ export const site = {
     },
   ] as OpeningHour[],
   serviceAreaNote:
-    'Verkstaden ligger på Värmdö. Du är välkommen med släpet hit oavsett om du kommer från Gustavsberg, Ingarö, Nacka eller östra Stockholm.',
+    'Vår verkstad finns på Värmdö, men alla är självklart välkomna oavsett varifrån du kommer. Vi hjälper kunder från hela närområdet och kan även utföra vissa service- och reparationsarbeten ute på plats när det passar bättre än att ta släpet till verkstaden.
+
+Hör av dig och berätta vad du behöver hjälp med, så hittar vi en lösning som passar.',
   social: {
     facebook: undefined as string | undefined,
     instagram: undefined as string | undefined,

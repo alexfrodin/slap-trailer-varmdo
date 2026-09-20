@@ -56,7 +56,7 @@ export const home = {
       text: 'När du hör av dig kommer du i kontakt med oss som gör jobbet. Enkelt, personligt och utan onödiga mellanhänder.',
     },
   ],
-  areaHeading: 'Värmdö och närområdet',
+  areaHeading: 'Värmdö med omnejd – och hjälp ute på plats',
   formHeading: 'Skicka en serviceförfrågan',
   formLead: 'Berätta kort vad som är fel. Vi ringer upp.',
   callAsideHeading: 'Snabbare att ringa?',
@@ -71,12 +71,12 @@ export const home = {
       a: 'Ja, hör av dig innan du kommer så att vi kan ta emot släpet.',
     },
     {
-      q: 'Kan ni titta på båtsläpet när båten är inne på service?',
-      a: 'Ja. Säg till så går vi igenom trailern samtidigt.',
+      q: 'Kan ni serva och reparera båtsläp?',
+      a: 'Ja. Vi hjälper till med service, felsökning och reparation av båtsläp, bland annat hjullager, bromsar, belysning, vinsch, rullar och stödhjul.',
     },
     {
       q: 'Tar ni emot släp från Nacka och Ingarö?',
-      a: 'Ja. Verkstaden ligger på Värmdö. Du lämnar släpet här.',
+      a: 'Du är varmt välkommen till vår verkstad på Värmdö oavsett var du kommer ifrån. Hör gärna av dig innan du åker, så kan vi stämma av vad som behöver göras och hjälpa dig på smidigast möjliga sätt. För vissa typer av arbeten kan vi även komma ut och hjälpa till på plats.',
     },
   ],
 };
