@@ -48,8 +48,8 @@ export const home = {
       text: 'Vi hjälper dig med hjullager, bromsar, el, belysning, svetsning och andra vanliga reparationer av släp och trailers.',
     },
     {
-      title: 'Erfarenhet av olika typer av släp',
-      text: 'Vi arbetar med både vanliga släpvagnar och båtsläp och hjälper till med allt från löpande service till felsökning och reparation.',
+      title: 'Vi hjälper dig med de flesta släp',
+      text: 'Service, felsökning och reparation av både släpvagnar och båtsläp.',
     },
     {
       title: 'Direkt kontakt med verkstaden',
