@@ -37,7 +37,7 @@ export const site = {
   mapsUrl:
     'https://www.google.se/maps/place/Stockholms+Drevteknik+AB/@59.3275642,18.5447323,18.85z/data=!4m6!3m5!1s0x46f57fa0b452d885:0xfa8823bced6c0fc9!8m2!3d59.3279307!4d18.5454551!16s%2Fg%2F11s5cz80fb?entry=ttu',
   gbpUrl: undefined as string | undefined,
-  openingHoursLabel: 'Mån–fre 07–16',
+  openingHoursLabel: 'Mån–fre 07–16 (Ring före besök, vi kan vara ute på jobb)',
   openingHours: [
     {
       days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
