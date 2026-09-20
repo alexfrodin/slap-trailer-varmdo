@@ -46,15 +46,11 @@ export const services: Service[] = [
       whatWeDoTitle: 'Vad vi går igenom på ett båttrailer',
       whatWeDo: [
         'Hjullager, nav och tätningar',
-        'Bromsar och påskjutsbroms där släpet har broms',
+        'Bromsar, påskjutsbroms och handbroms',
         'Belysning, släpkontakt och jordfel',
         'Vinsch, lina och fästen',
         'Rullar, stöttor och stödhjul',
         'Däck, lufttryck och synliga skador på ram och fästen',
-      ],
-      notes: [
-        'Vi tar emot vanliga släpvagnar också. Vi hjälper dig med de flesta släp, inte hela verksamheten.',
-        'Bekräfta gärna om båten redan är inne på service, så kan vi ofta se över trailern samtidigt.',
       ],
     },
     faqs: [
@@ -139,7 +135,7 @@ export const services: Service[] = [
     navLabel: 'Bromsar',
     cardTitle: 'Bromsar & påskjutsbroms',
     cardBlurb: 'Påskjutsbroms, vajrar, bromsbackar och parkeringsbroms.',
-    h1: 'Bromsar och påskjutsbroms till släpvagn',
+    h1: 'Bromsar, påskjutsbroms och handbroms till släpvagn',
     title: 'Bromsservice för släpvagn',
     description:
       'Service av påskjutsbroms, bromsvajrar och parkeringsbroms på släpvagnar och båttrailer. Vi justerar, felsöker och reparerar.',
@@ -319,7 +315,7 @@ export const services: Service[] = [
       whatWeDoTitle: 'Vad vi kontrollerar',
       whatWeDo: [
         'Belysning och släpkontakt',
-        'Bromsar och påskjutsbroms där det finns',
+        'Bromsar, påskjutsbroms och handbroms där det finns',
         'Däck och hjul',
         'Synlig rost, fästen och säkerhetsdetaljer',
         'Lagning av det som behöver åtgärdas innan du åker på besiktning',
