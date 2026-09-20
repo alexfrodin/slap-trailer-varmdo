@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /tack
+
+Sitemap: https://slapochtrailervarmdo.se/sitemap-index.xml

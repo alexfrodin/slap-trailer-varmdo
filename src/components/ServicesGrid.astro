@@ -1,0 +1,8 @@
+---
+import { services } from '../data/services';
+import ServiceCard from './ServiceCard.astro';
+---
+
+<div class="grid gap-4 md:grid-cols-3">
+  {services.map((service) => <ServiceCard service={service} />)}
+</div>

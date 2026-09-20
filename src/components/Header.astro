@@ -1,0 +1,84 @@
+---
+import { site } from '../data/site';
+import { cta, nav } from '../data/home';
+import { headerLinks, serviceLinks } from '../data/navigation';
+import CTAButton from './CTAButton.astro';
+import IconPhone from './icons/IconPhone.astro';
+import PhoneLink from './PhoneLink.astro';
+
+interface Props {
+  bookHref: string;
+}
+
+const { bookHref } = Astro.props;
+---
+
+<header class="sticky top-0 z-40 border-b border-line bg-elevated">
+  <div class="wrap flex h-[var(--header-offset)] items-center justify-between gap-4">
+    <a href="/" class="min-w-0 font-semibold leading-tight text-accent no-underline">
+      <span class="block text-[0.95rem] sm:text-base">{site.brandName}</span>
+    </a>
+
+    <nav class="hidden items-center gap-6 lg:flex" aria-label="Huvudmeny">
+      <div class="relative group">
+        <button
+          type="button"
+          class="inline-flex items-center gap-1 bg-transparent p-0 text-base font-medium text-ink"
+          aria-expanded="false"
+          aria-haspopup="true"
+          data-services-toggle
+        >
+          {nav.services}
+          <span aria-hidden="true">▾</span>
+        </button>
+        <ul
+          class="invisible absolute left-0 top-full z-50 mt-2 min-w-52 border border-line bg-elevated py-2 opacity-0 shadow-none transition-opacity group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
+        >
+          {serviceLinks.map((link) => (
+            <li>
+              <a class="block px-4 py-2 text-ink no-underline hover:bg-surface" href={link.href}>
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {headerLinks.map((link) => (
+        <a class="font-medium text-ink no-underline hover:underline" href={link.href}>
+          {link.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="flex items-center gap-2 sm:gap-3">
+      <PhoneLink
+        class="hidden items-center gap-2 font-semibold text-accent no-underline md:inline-flex"
+      >
+        <IconPhone />
+        {site.phoneDisplay}
+      </PhoneLink>
+      <PhoneLink
+        class="inline-flex h-11 w-11 items-center justify-center rounded border border-line text-accent md:hidden"
+        display=""
+      >
+        <span class="sr-only">{cta.call}</span>
+        <IconPhone />
+      </PhoneLink>
+      <span class="hidden sm:inline-flex">
+        <CTAButton href={bookHref} event="cta_boka">
+          {cta.book}
+        </CTAButton>
+      </span>
+      <button
+        type="button"
+        class="inline-flex h-11 w-11 items-center justify-center rounded border border-ink bg-elevated lg:hidden"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        data-menu-toggle
+      >
+        <span class="sr-only">{nav.openMenu}</span>
+        <span aria-hidden="true" class="text-xl leading-none">☰</span>
+      </button>
+    </div>
+  </div>
+</header>

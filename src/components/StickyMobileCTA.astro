@@ -1,0 +1,32 @@
+---
+import { site } from '../data/site';
+import { cta } from '../data/home';
+import IconPhone from './icons/IconPhone.astro';
+
+interface Props {
+  bookHref: string;
+}
+
+const { bookHref } = Astro.props;
+---
+
+<div
+  class="sticky-cta fixed inset-x-0 bottom-0 z-30 grid grid-cols-2 border-t border-line bg-elevated md:hidden"
+  style="padding-bottom: env(safe-area-inset-bottom)"
+>
+  <a
+    href={`tel:${site.phoneE164}`}
+    class="inline-flex min-h-14 items-center justify-center gap-2 border-r border-line font-semibold text-accent no-underline"
+    data-plausible-event="tel_click"
+  >
+    <IconPhone />
+    {cta.callShort}
+  </a>
+  <a
+    href={bookHref}
+    class="inline-flex min-h-14 items-center justify-center bg-cta font-semibold text-cta-ink no-underline"
+    data-plausible-event="cta_boka"
+  >
+    {cta.book}
+  </a>
+</div>

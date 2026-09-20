@@ -1,0 +1,51 @@
+---
+import Analytics from '../components/Analytics.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import JsonLd from '../components/JsonLd.astro';
+import MobileNav from '../components/MobileNav.astro';
+import Seo from '../components/Seo.astro';
+import StickyMobileCTA from '../components/StickyMobileCTA.astro';
+import { nav } from '../data/home';
+import { site } from '../data/site';
+import { normalizePath } from '../lib/seo';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  path?: string;
+}
+
+const { title, description, noindex = false, jsonLd, path } = Astro.props;
+const pathname = normalizePath(path ?? Astro.url.pathname);
+const hasForm = !['/tack', '/integritetspolicy'].includes(pathname);
+const bookHref = hasForm ? '#forfragan' : '/kontakt#forfragan';
+const showSticky = pathname !== '/tack';
+---
+
+<!doctype html>
+<html lang={site.language}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <Seo title={title} description={description} path={pathname} noindex={noindex} />
+    {jsonLd && <JsonLd data={jsonLd} />}
+    <Analytics />
+  </head>
+  <body class:list={[!showSticky && 'no-sticky']}>
+    <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-elevated focus:px-3 focus:py-2" href="#innehall">
+      {nav.skip}
+    </a>
+    <Header bookHref={bookHref} />
+    <MobileNav bookHref={bookHref} />
+    <main id="innehall">
+      <slot />
+    </main>
+    <Footer />
+    {showSticky && <StickyMobileCTA bookHref={bookHref} />}
+  </body>
+</html>

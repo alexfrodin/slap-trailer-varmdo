@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "@fontsource/ibm-plex-sans/latin-400.css";
+@import "@fontsource/ibm-plex-sans/latin-ext-400.css";
+@import "@fontsource/ibm-plex-sans/latin-600.css";
+@import "@fontsource/ibm-plex-sans/latin-ext-600.css";
+
+@theme {
+  --font-sans: "IBM Plex Sans", system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --color-surface: #f3efe8;
+  --color-elevated: #fffcf7;
+  --color-ink: #1c1e1b;
+  --color-muted: #4f554d;
+  --color-line: #d4cfc4;
+  --color-accent: #2f4a43;
+  --color-cta: #b54724;
+  --color-cta-ink: #fffaf6;
+  --color-focus: #1c5c8c;
+}
+
+:root {
+  --header-offset: 4.25rem;
+  --sticky-bar-height: 4.25rem;
+  --color-bg: #f3efe8;
+  --color-bg-elevated: #fffcf7;
+  --color-ink: #1c1e1b;
+  --color-ink-muted: #4f554d;
+  --color-line: #d4cfc4;
+  --color-accent: #2f4a43;
+  --color-cta: #b54724;
+  --color-cta-ink: #fffaf6;
+  --color-focus: #1c5c8c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  hyphenate-limit-chars: 8 4 4;
+}
+
+@media (max-width: 767px) {
+  body:not(.no-sticky) {
+    padding-bottom: calc(var(--sticky-bar-height) + env(safe-area-inset-bottom));
+  }
+
+  body.hide-sticky .sticky-cta {
+    display: none;
+  }
+}
+
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .wrap {
+    padding-inline: 1.5rem;
+  }
+}
+
+.section {
+  padding-block: 3rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-block: 5rem;
+  }
+}
+
+.prose-sv {
+  max-width: 38rem;
+}
+
+.hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

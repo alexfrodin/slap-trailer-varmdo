@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PhoneLink from '../components/PhoneLink.astro';
+---
+
+<BaseLayout
+  title="Tack för din förfrågan"
+  description="Vi har tagit emot din förfrågan och hör av oss så snart vi kan."
+  path="/tack"
+  noindex
+>
+  <section class="section">
+    <div class="wrap max-w-xl">
+      <h1 class="text-3xl font-semibold">Vi har tagit emot din förfrågan</h1>
+      <p class="mt-4 text-lg text-muted">
+        Tack. Vi hör av oss så snart vi kan. Behöver du få tag på oss direkt?
+      </p>
+      <p class="mt-6">
+        <PhoneLink class="text-2xl font-semibold text-accent no-underline" />
+      </p>
+      <p class="mt-8">
+        <a class="font-semibold text-accent underline underline-offset-4" href="/">Till startsidan</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

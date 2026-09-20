@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactForm from '../components/ContactForm.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import LocationBlock from '../components/LocationBlock.astro';
+import PhoneLink from '../components/PhoneLink.astro';
+import { site } from '../data/site';
+import { breadcrumbNode, localBusinessNode } from '../lib/schema';
+
+const title = 'Kontakt';
+const description = `Ring ${site.phoneDisplay} eller skicka en serviceförfrågan. Verkstad på Värmdö. ${site.address.street}, ${site.address.postalCode} ${site.address.city}.`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  path="/kontakt"
+  jsonLd={[
+    localBusinessNode(),
+    breadcrumbNode([
+      { name: 'Hem', path: '/' },
+      { name: 'Kontakt', path: '/kontakt' },
+    ]),
+  ]}
+>
+  <section class="section">
+    <div class="wrap">
+      <h1 class="text-3xl font-semibold md:text-4xl">Kontakta oss</h1>
+      <p class="mt-4 text-lg text-muted">Ring eller skicka en förfrågan. Vi återkommer och bokar tid.</p>
+      <p class="mt-6">
+        <PhoneLink class="text-2xl font-semibold text-accent no-underline" />
+      </p>
+      <p class="mt-2 text-muted">{site.openingHoursLabel}</p>
+    </div>
+  </section>
+  <ContactForm />
+  <HowItWorks />
+  <LocationBlock />
+</BaseLayout>

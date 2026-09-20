@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BoatUSP from '../components/BoatUSP.astro';
+import ContactForm from '../components/ContactForm.astro';
+import CTAButton from '../components/CTAButton.astro';
+import FAQ from '../components/FAQ.astro';
+import Hero from '../components/Hero.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import LocationBlock from '../components/LocationBlock.astro';
+import ServicesGrid from '../components/ServicesGrid.astro';
+import { cta, home } from '../data/home';
+import { site } from '../data/site';
+import { homeCatalogNode, localBusinessNode, websiteNode } from '../lib/schema';
+---
+
+<BaseLayout
+  title={home.title}
+  description={home.description}
+  path="/"
+  jsonLd={[
+    { ...localBusinessNode(), hasOfferCatalog: homeCatalogNode() },
+    websiteNode(),
+  ]}
+>
+  <Hero eyebrow={home.eyebrow} heading={home.h1} lead={home.lead} micro={`${home.heroMicro} · ${site.address.city}`}>
+    <CTAButton slot="ctas" href="#forfragan" event="cta_boka">{cta.book}</CTAButton>
+    <CTAButton slot="ctas" href={`tel:${site.phoneE164}`} variant="secondary" event="tel_click">
+      {cta.call}
+    </CTAButton>
+  </Hero>
+
+  <section class="border-b border-line bg-surface">
+    <div class="wrap grid gap-3 py-5 md:grid-cols-3">
+      {home.trust.map((item) => (
+        <p class="border border-line bg-elevated px-4 py-3 text-center font-medium">{item}</p>
+      ))}
+    </div>
+  </section>
+
+  <section id="tjanster" class="section scroll-mt-24">
+    <div class="wrap">
+      <h2 class="text-2xl font-semibold md:text-3xl">{home.servicesHeading}</h2>
+      <div class="mt-8">
+        <ServicesGrid />
+      </div>
+    </div>
+  </section>
+
+  <BoatUSP />
+  <HowItWorks />
+
+  <section class="section bg-elevated">
+    <div class="wrap">
+      <h2 class="text-2xl font-semibold md:text-3xl">{home.whyHeading}</h2>
+      <ul class="mt-8 grid gap-6 md:grid-cols-3">
+        {home.why.map((item) => (
+          <li>
+            <h3 class="text-lg font-semibold">{item.title}</h3>
+            <p class="mt-2 text-muted">{item.text}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="text-2xl font-semibold md:text-3xl">{home.areaHeading}</h2>
+      <p class="prose-sv mt-4 text-lg text-muted">{site.serviceAreaNote}</p>
+    </div>
+  </section>
+
+  <FAQ items={home.faqs} />
+  <ContactForm />
+  <LocationBlock />
+</BaseLayout>

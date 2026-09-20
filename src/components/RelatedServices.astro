@@ -1,0 +1,21 @@
+---
+import type { Service } from '../data/services';
+import ServiceCard from './ServiceCard.astro';
+
+interface Props {
+  services: Service[];
+}
+
+const { services } = Astro.props;
+---
+
+{services.length > 0 && (
+  <section class="section border-t border-line">
+    <div class="wrap">
+      <h2 class="text-2xl font-semibold">Relaterade tjänster</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        {services.map((service) => <ServiceCard service={service} />)}
+      </div>
+    </div>
+  </section>
+)}

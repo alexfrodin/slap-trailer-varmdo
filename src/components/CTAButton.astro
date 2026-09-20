@@ -1,0 +1,46 @@
+---
+interface Props {
+  href?: string;
+  variant?: 'primary' | 'secondary' | 'phone';
+  type?: 'button' | 'submit';
+  class?: string;
+  event?: string;
+}
+
+const {
+  href,
+  variant = 'primary',
+  type = 'button',
+  class: className = '',
+  event,
+} = Astro.props;
+
+const variants = {
+  primary:
+    'bg-cta text-cta-ink hover:bg-[#9a3d1e]',
+  secondary:
+    'border border-ink text-ink hover:bg-ink hover:text-elevated',
+  phone:
+    'bg-accent text-cta-ink hover:bg-[#243a35]',
+};
+
+const classes = [
+  'inline-flex min-h-11 items-center justify-center gap-2 rounded px-5 py-2.5 text-base font-semibold no-underline transition-colors',
+  variants[variant],
+  className,
+].join(' ');
+---
+
+{href ? (
+  <a
+    href={href}
+    class={classes}
+    data-plausible-event={event}
+  >
+    <slot />
+  </a>
+) : (
+  <button type={type} class={classes} data-plausible-event={event}>
+    <slot />
+  </button>
+)}

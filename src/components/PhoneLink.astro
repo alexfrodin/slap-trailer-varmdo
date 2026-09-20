@@ -1,0 +1,18 @@
+---
+import { site } from '../data/site';
+
+interface Props {
+  class?: string;
+  display?: string;
+}
+
+const { class: className = '', display = site.phoneDisplay } = Astro.props;
+---
+
+<a
+  href={`tel:${site.phoneE164}`}
+  class:list={['underline-offset-2 hover:underline', className]}
+  data-plausible-event="tel_click"
+>
+  <slot>{display}</slot>
+</a>

@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { legalLine, site } from '../data/site';
+import { breadcrumbNode } from '../lib/schema';
+---
+
+<BaseLayout
+  title="Integritetspolicy"
+  description={`Så behandlar ${site.brandName} personuppgifter när du ringer eller skickar en serviceförfrågan.`}
+  path="/integritetspolicy"
+  jsonLd={breadcrumbNode([
+    { name: 'Hem', path: '/' },
+    { name: 'Integritetspolicy', path: '/integritetspolicy' },
+  ])}
+>
+  <article class="section">
+    <div class="wrap prose-sv space-y-6">
+      <h1 class="text-3xl font-semibold">Integritetspolicy</h1>
+      <p class="text-muted">{legalLine()}</p>
+
+      <h2 class="text-xl font-semibold">Personuppgiftsansvarig</h2>
+      <p>
+        {site.legalName}, org.nr {site.orgNumber}, är personuppgiftsansvarig.
+        Adress: {site.address.street}, {site.address.postalCode} {site.address.city}.
+        E-post: {site.email}. Telefon: {site.phoneDisplay}.
+      </p>
+
+      <h2 class="text-xl font-semibold">Vilka uppgifter vi samlar in</h2>
+      <p>
+        När du skickar en serviceförfrågan kan vi behandla namn, telefonnummer,
+        e-post, registreringsnummer, typ av släp, din beskrivning och eventuella
+        bilder. Ringer du oss behandlar vi det nummer du ringer från och det du
+        berättar för att kunna hjälpa dig.
+      </p>
+
+      <h2 class="text-xl font-semibold">Varför vi behandlar uppgifterna</h2>
+      <p>
+        Uppgifterna används för att besvara din förfrågan, boka tid och utföra
+        jobbet. Rättslig grund är åtgärder innan avtal och fullgörande av avtal
+        (artikel 6.1.b GDPR) samt, när det behövs, vårt berättigade intresse av
+        att kunna svara på en förfrågan (artikel 6.1.f).
+      </p>
+
+      <h2 class="text-xl font-semibold">Bilder</h2>
+      <p>
+        Bilder du skickar kan visa registreringsskylt eller omgivning. De används
+        bara för att bedöma jobbet och skickas i mejl till oss. Vi publicerar
+        inte kundbilder.
+      </p>
+
+      <h2 class="text-xl font-semibold">Mottagare</h2>
+      <p>
+        Vi använder Vercel för drift av webbplatsen, Resend för att skicka
+        mejl från formuläret och Cloudflare Turnstile för att hindra skräppost.
+        Om du godkänner mätning av annonser kan Google Ads användas för det.
+      </p>
+
+      <h2 class="text-xl font-semibold">Hur länge vi sparar</h2>
+      <p>
+        Förfrågningar sparas så länge de behövs för jobbet och för bokföring
+        när det krävs. Därefter raderas de.
+      </p>
+
+      <h2 class="text-xl font-semibold">Kakor och mätning</h2>
+      <p>
+        Webbplatsen använder i grunden ingen reklam- eller analyskaka. Vi kan
+        använda cookiefri statistik (Vercel Analytics och eventuellt Plausible).
+        Om Google Ads-mätning är på slås den på först efter att du godkänt det.
+        Turnstile kan sätta en kaka som behövs för att skydda formuläret.
+      </p>
+
+      <h2 class="text-xl font-semibold">Dina rättigheter</h2>
+      <p>
+        Du har rätt att begära tillgång, rättelse och radering, och att klaga
+        till Integritetsskyddsmyndigheten (IMY). Kontakta oss på {site.email}.
+      </p>
+    </div>
+  </article>
+</BaseLayout>

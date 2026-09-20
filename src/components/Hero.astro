@@ -1,0 +1,37 @@
+---
+import TrailerMark from './icons/TrailerMark.astro';
+
+interface Props {
+  eyebrow?: string;
+  heading: string;
+  lead: string;
+  size?: 'large' | 'compact';
+  micro?: string;
+}
+
+const { eyebrow, heading, lead, size = 'large', micro } = Astro.props;
+const large = size === 'large';
+---
+
+<section class:list={['border-b border-line bg-elevated', large ? 'py-10 md:py-16' : 'py-8 md:py-12']}>
+  <div class:list={['wrap grid items-center gap-8', large && 'md:grid-cols-2']}>
+    <div>
+      {eyebrow && (
+        <p class="mb-3 text-sm font-semibold uppercase tracking-wide text-accent">{eyebrow}</p>
+      )}
+      <h1 class:list={['max-w-xl font-semibold tracking-tight text-ink', large ? 'text-3xl md:text-5xl' : 'text-3xl md:text-4xl']}>
+        {heading}
+      </h1>
+      <p class="prose-sv mt-4 text-lg text-muted">{lead}</p>
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+        <slot name="ctas" />
+      </div>
+      {micro && <p class="mt-4 text-sm text-muted">{micro}</p>}
+    </div>
+    {large && (
+      <div class="flex items-center justify-center bg-accent p-8 text-[#d7e3de] md:min-h-80">
+        <TrailerMark class="w-full max-w-md" />
+      </div>
+    )}
+  </div>
+</section>

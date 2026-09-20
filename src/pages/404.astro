@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTAButton from '../components/CTAButton.astro';
+import { cta } from '../data/home';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+  title="Sidan hittades inte"
+  description="Sidan finns inte. Ring oss eller gå till startsidan."
+  noindex
+>
+  <section class="section">
+    <div class="wrap max-w-xl">
+      <h1 class="text-3xl font-semibold">Sidan hittades inte</h1>
+      <p class="mt-4 text-lg text-muted">
+        Länken stämmer inte. Gå till startsidan eller ring oss så hjälper vi dig.
+      </p>
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+        <CTAButton href="/">Till startsidan</CTAButton>
+        <CTAButton href={`tel:${site.phoneE164}`} variant="secondary" event="tel_click">
+          {cta.call}
+        </CTAButton>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,83 @@
+---
+import { site } from '../data/site';
+import { cta, nav } from '../data/home';
+import { headerLinks, serviceLinks } from '../data/navigation';
+import CTAButton from './CTAButton.astro';
+import PhoneLink from './PhoneLink.astro';
+
+interface Props {
+  bookHref: string;
+}
+
+const { bookHref } = Astro.props;
+---
+
+<div
+  id="mobile-nav"
+  class="fixed inset-0 z-50 hidden bg-elevated lg:hidden"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Meny"
+>
+  <div class="flex h-[var(--header-offset)] items-center justify-between border-b border-line px-4">
+    <p class="font-semibold text-accent">{site.brandName}</p>
+    <button
+      type="button"
+      class="inline-flex h-11 w-11 items-center justify-center rounded border border-ink"
+      data-menu-close
+    >
+      <span class="sr-only">{nav.closeMenu}</span>
+      <span aria-hidden="true" class="text-2xl leading-none">×</span>
+    </button>
+  </div>
+  <nav class="flex flex-col gap-1 overflow-y-auto px-4 py-6" aria-label="Mobilmeny">
+    <p class="mb-2 text-sm font-semibold uppercase tracking-wide text-muted">{nav.services}</p>
+    {serviceLinks.map((link) => (
+      <a class="min-h-11 border-b border-line py-3 text-lg text-ink no-underline" href={link.href}>
+        {link.label}
+      </a>
+    ))}
+    {headerLinks.map((link) => (
+      <a class="min-h-11 border-b border-line py-3 text-lg text-ink no-underline" href={link.href}>
+        {link.label}
+      </a>
+    ))}
+    <div class="mt-6 flex flex-col gap-3">
+      <PhoneLink class="text-lg font-semibold text-accent no-underline">
+        {site.phoneDisplay}
+      </PhoneLink>
+      <CTAButton href={bookHref} event="cta_boka">{cta.book}</CTAButton>
+    </div>
+  </nav>
+</div>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+  const closeBtn = document.querySelector<HTMLButtonElement>('[data-menu-close]');
+  const drawer = document.getElementById('mobile-nav');
+  const main = document.getElementById('innehall');
+  const footer = document.querySelector('footer');
+
+  if (toggle && drawer) {
+    const setOpen = (open: boolean) => {
+      drawer.classList.toggle('hidden', !open);
+      toggle.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('overflow-hidden', open);
+      main?.toggleAttribute('inert', open);
+      footer?.toggleAttribute('inert', open);
+      if (open) closeBtn?.focus();
+      else toggle.focus();
+    };
+
+    toggle.addEventListener('click', () => setOpen(true));
+    closeBtn?.addEventListener('click', () => setOpen(false));
+    drawer.addEventListener('click', (event) => {
+      if ((event.target as HTMLElement).closest('a')) setOpen(false);
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !drawer.classList.contains('hidden')) {
+        setOpen(false);
+      }
+    });
+  }
+</script>

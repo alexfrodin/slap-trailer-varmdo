@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactForm from '../components/ContactForm.astro';
+import CTAButton from '../components/CTAButton.astro';
+import FAQ from '../components/FAQ.astro';
+import Hero from '../components/Hero.astro';
+import Notice from '../components/Notice.astro';
+import RelatedServices from '../components/RelatedServices.astro';
+import { cta } from '../data/home';
+import { getRelatedServices, services, type Service } from '../data/services';
+import { site } from '../data/site';
+import { breadcrumbNode, localBusinessNode, serviceNode } from '../lib/schema';
+
+export function getStaticPaths() {
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+
+interface Props {
+  service: Service;
+}
+
+const { service } = Astro.props;
+const related = getRelatedServices(service);
+---
+
+<BaseLayout
+  title={service.title}
+  description={service.description}
+  path={`/${service.slug}`}
+  jsonLd={[
+    localBusinessNode(),
+    serviceNode(service),
+    breadcrumbNode([
+      { name: 'Hem', path: '/' },
+      { name: service.cardTitle, path: `/${service.slug}` },
+    ]),
+  ]}
+>
+  <nav class="wrap pt-6 text-sm text-muted" aria-label="Brödsmulor">
+    <a class="text-muted hover:underline" href="/">Hem</a>
+    <span aria-hidden="true"> / </span>
+    <span>{service.cardTitle}</span>
+  </nav>
+
+  <Hero heading={service.h1} lead={service.heroLead} size="compact">
+    <CTAButton slot="ctas" href="#forfragan" event="cta_boka">{cta.book}</CTAButton>
+    <CTAButton slot="ctas" href={`tel:${site.phoneE164}`} variant="secondary" event="tel_click">
+      {cta.call}
+    </CTAButton>
+  </Hero>
+
+  <section class="section">
+    <div class="wrap grid gap-10 md:grid-cols-2">
+      {service.sections.symptoms && (
+        <div>
+          <h2 class="text-2xl font-semibold">{service.sections.symptomsTitle}</h2>
+          <ul class="mt-4 list-disc space-y-2 pl-5 text-muted">
+            {service.sections.symptoms.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+      )}
+      <div>
+        <h2 class="text-2xl font-semibold">{service.sections.whatWeDoTitle}</h2>
+        <ul class="mt-4 list-disc space-y-2 pl-5 text-muted">
+          {service.sections.whatWeDo.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </div>
+    {service.notice && (
+      <div class="wrap mt-8">
+        <Notice text={service.notice} />
+      </div>
+    )}
+    {service.sections.notes && (
+      <div class="wrap prose-sv mt-8 space-y-3 text-muted">
+        {service.sections.notes.map((note) => <p>{note}</p>)}
+      </div>
+    )}
+  </section>
+
+  <FAQ items={service.faqs} />
+  <RelatedServices services={related} />
+  <ContactForm />
+</BaseLayout>

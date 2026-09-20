@@ -1,0 +1,36 @@
+---
+import { home } from '../data/home';
+import TrailerMark from './icons/TrailerMark.astro';
+
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<section class="section bg-accent text-cta-ink">
+  <div class:list={['wrap grid items-center gap-10', !compact && 'md:grid-cols-2']}>
+    <div>
+      <h2 class="max-w-xl text-2xl font-semibold md:text-3xl">{home.boat.heading}</h2>
+      <p class="prose-sv mt-4 text-lg text-[#d7e3de]">{home.boat.body}</p>
+      <ul class="mt-6 flex flex-wrap gap-2">
+        {home.boat.checks.map((item) => (
+          <li class="border border-[#7a938b] px-3 py-1 text-sm">{item}</li>
+        ))}
+      </ul>
+      {!compact && (
+        <p class="mt-6">
+          <a class="font-semibold text-cta-ink underline underline-offset-4" href="/batslap-service">
+            {home.boat.cta}
+          </a>
+        </p>
+      )}
+    </div>
+    {!compact && (
+      <div class="border border-[#7a938b] p-8 text-[#d7e3de]">
+        <TrailerMark class="w-full opacity-80" />
+      </div>
+    )}
+  </div>
+</section>

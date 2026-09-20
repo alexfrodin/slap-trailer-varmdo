@@ -1,0 +1,44 @@
+---
+import { site } from '../data/site';
+import { absoluteUrl, pageTitle } from '../lib/seo';
+
+interface Props {
+  title: string;
+  description: string;
+  path?: string;
+  noindex?: boolean;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  path = Astro.url.pathname,
+  noindex = false,
+  ogImage = site.defaultOgImage,
+} = Astro.props;
+
+const fullTitle = pageTitle(title);
+const canonical = absoluteUrl(path === '/' ? '/' : path.replace(/\/$/, ''));
+const image = ogImage.startsWith('http') ? ogImage : absoluteUrl(ogImage);
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+<meta name="theme-color" content="#2f4a43" />
+<meta property="og:locale" content={site.locale} />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content={site.brandName} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={image} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />

@@ -1,0 +1,78 @@
+---
+import VercelAnalytics from '@vercel/analytics/astro';
+
+const plausible = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
+const adsId = import.meta.env.PUBLIC_GOOGLE_ADS_ID;
+const conversionLabel = import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_LABEL ?? '';
+const isThanks = Astro.url.pathname.replace(/\/$/, '') === '/tack';
+---
+
+<VercelAnalytics />
+
+{plausible && (
+  <script
+    defer
+    data-domain={plausible}
+    src="https://plausible.io/js/script.tagged-events.js"
+  ></script>
+)}
+
+{adsId && (
+  <>
+    <div
+      id="ads-consent"
+      class="fixed inset-x-0 bottom-0 z-50 hidden border-t border-line bg-elevated p-4 md:bottom-auto md:top-0"
+      role="dialog"
+      aria-label="Samtycke till annonsmätning"
+    >
+      <div class="wrap flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <p class="text-sm">
+          Vi vill mäta om våra annonser leder till samtal och förfrågningar.
+        </p>
+        <div class="flex gap-2">
+          <button type="button" class="min-h-11 border border-ink px-4 font-semibold" data-ads-deny>
+            Avvisa
+          </button>
+          <button type="button" class="min-h-11 bg-cta px-4 font-semibold text-cta-ink" data-ads-accept>
+            Godkänn
+          </button>
+        </div>
+      </div>
+    </div>
+    <script is:inline define:vars={{ adsId, conversionLabel, isThanks }}>
+      const key = 'ads_consent';
+      const bar = document.getElementById('ads-consent');
+      const stored = localStorage.getItem(key);
+
+      function loadAds() {
+        if (document.getElementById('gtag-src')) return;
+        const src = document.createElement('script');
+        src.id = 'gtag-src';
+        src.async = true;
+        src.src = `https://www.googletagmanager.com/gtag/js?id=${adsId}`;
+        document.head.appendChild(src);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ window.dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', adsId);
+        if (isThanks && conversionLabel) {
+          gtag('event', 'conversion', { send_to: `${adsId}/${conversionLabel}` });
+        }
+      }
+
+      if (stored === '1') loadAds();
+      else if (stored !== '0' && bar) bar.classList.remove('hidden');
+
+      bar?.querySelector('[data-ads-accept]')?.addEventListener('click', () => {
+        localStorage.setItem(key, '1');
+        bar.classList.add('hidden');
+        loadAds();
+      });
+      bar?.querySelector('[data-ads-deny]')?.addEventListener('click', () => {
+        localStorage.setItem(key, '0');
+        bar.classList.add('hidden');
+      });
+    </script>
+  </>
+)}
