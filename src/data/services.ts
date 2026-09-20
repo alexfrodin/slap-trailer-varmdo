@@ -29,11 +29,11 @@ export const services: Service[] = [
     cardTitle: 'Båttrailer',
     cardBlurb: 'Rullar, vinsch, stödhjul, lager, bromsar och belysning.',
     h1: 'Service och reparation av båttrailer',
-    title: 'båttrailer service på Värmdö',
+    title: 'Båttrailer service på Värmdö',
     description:
       'Service av båttrailer på Värmdö: rullar, vinsch, stödhjul, hjullager, bromsar och belysning. Lämna gärna trailern när båten är inne.',
     heroLead:
-      'båttrailer utsätts för mycket slitage från vatten, rampkörning och regelbunden användning. Vi hjälper dig med service, felsökning och reparation i vår verkstad på Värmdö.',
+      'Båttrailer utsätts för mycket slitage från vatten, rampkörning och regelbunden användning. Vi hjälper dig med service, felsökning och reparation i vår verkstad på Värmdö.',
     sections: {
       symptomsTitle: 'Vanliga tecken på att trailern behöver ses över',
       symptoms: [
@@ -68,7 +68,7 @@ export const services: Service[] = [
       },
     ],
     relatedSlugs: ['hjullager-slapvagn', 'bromsservice-slapvagn', 'el-belysning-slapvagn'],
-    schemaServiceType: 'båttrailer service',
+    schemaServiceType: 'Båttrailer service',
     adsGroup: 'Boat trailer',
   },
   {
