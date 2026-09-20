@@ -14,30 +14,37 @@ export type OpeningHour = {
 
 export const site = {
   brandName: 'Släp & Trailer Värmdö',
-  legalName: '[COMPANY_NAME] AB',
-  orgNumber: '[ORG_NUMBER]',
+  legalName: 'Stockholms Drevteknik AB',
+  orgNumber: '559358-3726',
   url: import.meta.env.PUBLIC_SITE_URL ?? 'https://slapochtrailervarmdo.se',
   locale: 'sv_SE',
   language: 'sv',
-  phoneDisplay: '[PHONE]',
-  phoneE164: '[PHONE_E164]',
+  phoneDisplay: '08-292 392',
+  phoneE164: '+468292392',
   email: '[EMAIL]',
   address: {
-    street: '[ADDRESS_STREET]',
-    postalCode: '[ADDRESS_POSTAL]',
-    city: '[ADDRESS_CITY]',
+    street: 'Älvsbyvägen 45',
+    postalCode: '139 52',
+    city: 'Värmdö',
     region: 'Stockholm',
     country: 'SE',
     countryName: 'Sverige',
   },
   geo: {
-    lat: '[GEO_LAT]',
-    lng: '[GEO_LNG]',
+    lat: '59.3275642',
+    lng: '18.5447323',
   },
-  mapsUrl: '[MAPS_DIRECTIONS_URL]',
+  mapsUrl:
+    'https://www.google.se/maps/place/Stockholms+Drevteknik+AB/@59.3275642,18.5447323,18.85z/data=!4m6!3m5!1s0x46f57fa0b452d885:0xfa8823bced6c0fc9!8m2!3d59.3279307!4d18.5454551!16s%2Fg%2F11s5cz80fb?entry=ttu',
   gbpUrl: undefined as string | undefined,
-  openingHoursLabel: '[OPENING_HOURS]',
-  openingHours: [] as OpeningHour[],
+  openingHoursLabel: 'Mån–fre 07–16',
+  openingHours: [
+    {
+      days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '07:00',
+      closes: '16:00',
+    },
+  ] as OpeningHour[],
   serviceAreaNote:
     'Verkstaden ligger på Värmdö. Du är välkommen med släpet hit oavsett om du kommer från Gustavsberg, Ingarö, Nacka eller östra Stockholm.',
   social: {
