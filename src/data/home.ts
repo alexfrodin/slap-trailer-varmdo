@@ -1,11 +1,11 @@
 export const home = {
   eyebrow: 'Släp & Trailer Värmdö',
   h1: 'Service och reparation av släpvagnar på Värmdö',
-  lead: 'Hjullager, bromsar, el, svetsning och service av båtsläp.',
+  lead: 'Hjullager, bromsar, el, svetsning och service av båttrailer.',
   heroMicro: 'Verkstad på Värmdö',
   title: 'Släpvagnsservice på Värmdö | Släp & Trailer Värmdö',
   description:
-    'Service och reparation av släpvagnar och båtsläp på Värmdö. Hjullager, bromsar, el och svets. Ring eller skicka en förfrågan.',
+    'Service och reparation av släpvagnar och båttrailer på Värmdö. Hjullager, bromsar, el och svets. Ring eller skicka en förfrågan.',
   trust: [
     'Lokal verkstad på Värmdö',
     'Trailer, släp, hästsläp och maskinsläp',
@@ -15,7 +15,7 @@ export const home = {
   boat: {
     heading: 'Service och reparation av släp och trailers',
     body: 'Regelbunden service minskar risken för problem och onödiga reparationer. Vi kontrollerar och servar bland annat hjullager, bromsar, belysning, vinsch, rullar, däck och stödhjul. Hör av dig så hjälper vi dig att gå igenom släpet och åtgärda det som behövs.',
-    cta: 'Läs mer om båtsläp',
+    cta: 'Läs mer om båttrailer',
     checks: [
       'Hjullager',
       'Bromsar',
@@ -63,15 +63,15 @@ export const home = {
   faqs: [
     {
       q: 'Vilka släp tar ni emot?',
-      a: 'Släpkärror, båtsläp, hästtransport, maskinsläp och liknande lätta släp. Har du ett tyngre eller udda släp – ring så säger vi om det passar.',
+      a: 'Släpkärror, båttrailer, hästtransport, maskinsläp och liknande lätta släp. Har du ett tyngre eller udda släp – ring så säger vi om det passar.',
     },
     {
       q: 'Behöver jag boka tid?',
       a: 'Ja, hör av dig innan du kommer så att vi kan ta emot släpet.',
     },
     {
-      q: 'Kan ni serva och reparera båtsläp?',
-      a: 'Ja. Vi hjälper till med service, felsökning och reparation av båtsläp, bland annat hjullager, bromsar, belysning, vinsch, rullar och stödhjul.',
+      q: 'Kan ni serva och reparera båttrailer?',
+      a: 'Ja. Vi hjälper till med service, felsökning och reparation av båttrailer, bland annat hjullager, bromsar, belysning, vinsch, rullar och stödhjul.',
     },
     {
       q: 'Kan ni hjälpa till ute på plats?',

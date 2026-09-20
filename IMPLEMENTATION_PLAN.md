@@ -208,7 +208,7 @@ Keep nav short. Six services do not all belong in the top bar.
 **Desktop header links:**
 
 - Tjänster (dropdown or simple mega of the 6 services — on mobile this is an accordion in the drawer)
-- Båtsläp (`/batslap-service`) — promoted because it is the USP
+- båttrailer (`/batslap-service`) — promoted because it is the USP
 - Inför besiktning (`/infor-besiktning`)
 - Kontakt (`/kontakt`)
 
@@ -270,7 +270,7 @@ Shared **primary CTAs** unless a page says otherwise:
 **Primary topic:** släpvagnsservice Värmdö / släpvagn service Värmdö / släpvagn verkstad Värmdö.
 
 **Title:** `Släpvagnsservice på Värmdö | Släp & Trailer Värmdö`  
-**Meta:** `Service och reparation av släpvagnar och båtsläp på Värmdö. Hjullager, bromsar, el och svets. Ring eller skicka en förfrågan.`  
+**Meta:** `Service och reparation av släpvagnar och båttrailer på Värmdö. Hjullager, bromsar, el och svets. Ring eller skicka en förfrågan.`  
 **H1:** `Service och reparation av släpvagnar på Värmdö`
 
 **Sections:** see Section 5 (homepage wireframe).
@@ -281,22 +281,22 @@ Shared **primary CTAs** unless a page says otherwise:
 
 - Vilka släp tar ni emot?
 - Behöver jag boka tid?
-- Kan ni serva och reparera båtsläp?
+- Kan ni serva och reparera båttrailer?
 - Kan ni hjälpa till ute på plats?
 
 ---
 
 ### 4.2 Boat trailers — `/batslap-service`
 
-**Purpose:** Convert boat-trailer owners; support Ads group “båtsläp”; explain the simultaneous-service USP without making the whole brand boat-only.
+**Purpose:** Convert boat-trailer owners; support Ads group “båttrailer”; explain the simultaneous-service USP without making the whole brand boat-only.
 
-**Intent:** Commercial — “båtsläp service / reparation / hjullager Värmdö”.
+**Intent:** Commercial — “båttrailer service / reparation / hjullager Värmdö”.
 
-**Primary topic:** båtsläp service Värmdö.
+**Primary topic:** båttrailer service Värmdö.
 
-**Title:** `Båtsläp service på Värmdö | Släp & Trailer Värmdö`  
-**Meta:** `Service av båtsläp på Värmdö: rullar, vinsch, stödhjul, hjullager, bromsar och belysning. Lämna gärna trailern när båten är inne.`  
-**H1:** `Service och reparation av båtsläp`
+**Title:** `båttrailer service på Värmdö | Släp & Trailer Värmdö`  
+**Meta:** `Service av båttrailer på Värmdö: rullar, vinsch, stödhjul, hjullager, bromsar och belysning. Lämna gärna trailern när båten är inne.`  
+**H1:** `Service och reparation av båttrailer`
 
 **Sections:**
 
@@ -312,12 +312,12 @@ Shared **primary CTAs** unless a page says otherwise:
 
 **FAQ:**
 
-- Hur ofta bör hjullager på båtsläp kontrolleras?
+- Hur ofta bör hjullager på båttrailer kontrolleras?
 - Kan ni byta rullar och vinsch?
 - Behöver trailern vara tom?
 - Kan ni se över trailern medan båten är på service?
 
-**Ads mapping:** båtsläp service/reparation, byta hjullager båtsläp.
+**Ads mapping:** båttrailer service/reparation, byta hjullager båttrailer.
 
 ---
 
@@ -327,10 +327,10 @@ Shared **primary CTAs** unless a page says otherwise:
 
 **Intent:** Commercial investigation / emergency repair.
 
-**Primary topic:** byta hjullager släpvagn / hjullager båtsläp.
+**Primary topic:** byta hjullager släpvagn / hjullager båttrailer.
 
 **Title:** `Byta hjullager på släpvagn | Släp & Trailer Värmdö`  
-**Meta:** `Vi byter hjullager, nav och tätningar på släpvagnar och båtsläp. Om släpet låter, glappar eller går trögt – hör av dig.`  
+**Meta:** `Vi byter hjullager, nav och tätningar på släpvagnar och båttrailer. Om släpet låter, glappar eller går trögt – hör av dig.`  
 **H1:** `Hjullager och nav till släpvagn`
 
 **Sections:**
@@ -341,7 +341,7 @@ Shared **primary CTAs** unless a page says otherwise:
 4. Boat trailers + water (short cross-link to `/batslap-service`)  
 5. Can I still drive it? — cautious, not legal advice: if it howls, has play, or has seized, do not drive; call.  
 6. FAQ  
-7. Related: bromsar, besiktning, båtsläp  
+7. Related: bromsar, besiktning, båttrailer  
 8. Form  
 
 **FAQ:**
@@ -362,7 +362,7 @@ Shared **primary CTAs** unless a page says otherwise:
 **Primary topic:** släpvagn bromsar service / påskjutsbroms.
 
 **Title:** `Bromsservice för släpvagn | Släp & Trailer Värmdö`  
-**Meta:** `Service av påskjutsbroms, bromsvajrar och parkeringsbroms på släpvagnar och båtsläp. Vi justerar, felsöker och reparerar.`  
+**Meta:** `Service av påskjutsbroms, bromsvajrar och parkeringsbroms på släpvagnar och båttrailer. Vi justerar, felsöker och reparerar.`  
 **H1:** `Bromsar och påskjutare till släpvagn`
 
 **Sections:**
@@ -379,7 +379,7 @@ Shared **primary CTAs** unless a page says otherwise:
 
 - Hur vet jag att påskjutsbromsen är dålig?
 - Kan ni byta bromsvajrar?
-- Tar ni båtsläp med bromsar?
+- Tar ni båttrailer med bromsar?
 - Behöver jag lämna släpet hela dagen?
 
 ---
@@ -393,7 +393,7 @@ Shared **primary CTAs** unless a page says otherwise:
 **Primary topic:** el och belysning släpvagn.
 
 **Title:** `El och belysning på släpvagn | Släp & Trailer Värmdö`  
-**Meta:** `Felsökning av belysning, släpkontakt, jordfel och kablar på släpvagnar och båtsläp. Vi hittar felet och lagar det.`  
+**Meta:** `Felsökning av belysning, släpkontakt, jordfel och kablar på släpvagnar och båttrailer. Vi hittar felet och lagar det.`  
 **H1:** `El och belysning till släpvagn`
 
 **Sections:**
@@ -403,7 +403,7 @@ Shared **primary CTAs** unless a page says otherwise:
 3. What we do  
 4. Besiktning cross-link (lights are a common fail)  
 5. FAQ  
-6. Related: besiktning, båtsläp  
+6. Related: besiktning, båttrailer  
 7. Form  
 
 **FAQ:**
@@ -433,7 +433,7 @@ Shared **primary CTAs** unless a page says otherwise:
 2. Typical jobs (brackets, fenders, supports, cracks)  
 3. We inspect first; not every rusted frame is worth welding  
 4. FAQ  
-5. Related: besiktning, båtsläp  
+5. Related: besiktning, båttrailer  
 6. Form  
 
 **FAQ:**
@@ -547,7 +547,7 @@ Hide the sticky bar when a form field is focused so iOS Safari keyboard + bar do
 
 - Left: wordmark `Släp & Trailer Värmdö` (text logo is fine at launch)
 - Right: `tel:` icon-button (visible, 44px min) + menu button
-- Drawer: services list, båtsläp, besiktning, kontakt, full phone number, **Boka service**
+- Drawer: services list, båttrailer, besiktning, kontakt, full phone number, **Boka service**
 
 **Desktop**
 
@@ -568,7 +568,7 @@ No transparent-on-hero tricks. Solid background, high contrast, no blur.
 
 - Eyebrow: `Släp & Trailer Värmdö`
 - H1: `Service och reparation av släpvagnar på Värmdö`
-- Lead: `Hjullager, bromsar, el, svetsning och service av båtsläp.`
+- Lead: `Hjullager, bromsar, el, svetsning och service av båttrailer.`
 - Primary button: `Boka service` → `#forfragan`
 - Secondary button: `Ring oss` → `tel:`
 - Micro line under buttons: `Verkstad på Värmdö · [ADDRESS_CITY]`
@@ -603,7 +603,7 @@ Six cards (same data as service pages):
 | Bromsar & påskjutsbroms | `/bromsservice-slapvagn` |
 | El & belysning | `/el-belysning-slapvagn` |
 | Svetsning & reparation | `/svetsning-slapvagn` |
-| Båtsläp | `/batslap-service` |
+| båttrailer | `/batslap-service` |
 | Inför besiktning | `/infor-besiktning` |
 
 Each card: short Swedish sentence (symptoms or outcome), not a keyword dump. Entire card is a link.
@@ -615,11 +615,11 @@ Each card: short Swedish sentence (symptoms or outcome), not a keyword dump. Ent
 ### 5.5 Boat trailer USP
 
 Heading: `Service och reparation av släp och trailers`  
-*(swap heading if the shared-yard assumption is false: `Vi kan släp – och vi kan båtsläp`)*
+*(swap heading if the shared-yard assumption is false: `Vi kan släp – och vi kan båttrailer`)*
 
 Body: 2–4 sentences. List the check: hjullager, bromsar, belysning, vinsch, rullar, däck, stödhjul.
 
-CTA text link: `Läs mer om båtsläp` → `/batslap-service`
+CTA text link: `Läs mer om båttrailer` → `/batslap-service`
 
 One real photo (boat on trailer or rollers), not a stock sunset archipelago shot.
 
@@ -648,7 +648,7 @@ Heading: `En lokal verkstad på Värmdö`
 Three concrete points, not values-theatre:
 
 - Service och reparation på plats — lager, bromsar, el och svets.  
-- Båtsläp är en naturlig del av arbetet, inte ett sidospår.  
+- båttrailer är en naturlig del av arbetet, inte ett sidospår.  
 - Lokal service på Värmdö på Värmdö.
 
 If the existing boat company is public, one sentence may mention it **without** turning this into that company’s site.
@@ -964,7 +964,7 @@ Checklist:
 - [ ] Phone = website `tel:` = schema `telephone` (E.164 in schema)
 - [ ] Website = `[SITE_URL]`
 - [ ] Hours match the site
-- [ ] Services listed (hjullager, bromsar, el, svets, båtsläp, besiktningsgenomgång)
+- [ ] Services listed (hjullager, bromsar, el, svets, båttrailer, besiktningsgenomgång)
 - [ ] Real photos: exterior, interior, trailers, signage
 - [ ] Description in Swedish, no keyword spam
 - [ ] Enable messaging only if the owner will actually answer
@@ -1055,8 +1055,8 @@ One Search campaign, geo-limited (Värmdö municipality + Nacka + nearby east, r
 | Ad group | Example queries (themes) | Landing page |
 |---|---|---|
 | **Local service** | släpvagnsservice värmdö, släpvagn service värmdö, släpvagn verkstad värmdö, släpvagn reparation nacka | `/` |
-| **Boat trailer** | båtsläp service värmdö, båtsläp reparation, service båtsläp | `/batslap-service` |
-| **Wheel bearings** | byta hjullager släpvagn, hjullager båtsläp, hjullager släp | `/hjullager-slapvagn` |
+| **Boat trailer** | båttrailer service värmdö, båttrailer reparation, service båttrailer | `/batslap-service` |
+| **Wheel bearings** | byta hjullager släpvagn, hjullager båttrailer, hjullager släp | `/hjullager-slapvagn` |
 | **Brakes** | släpvagn bromsar service, påskjutsbroms, bromsar släp | `/bromsservice-slapvagn` |
 | **Electrics** | belysning släpvagn, släp belysning fungerar inte, felsök släpkontakt | `/el-belysning-slapvagn` |
 | **Welding** | svetsa släpvagn, laga släp, sprucken stänkskärm släp | `/svetsning-slapvagn` |
@@ -1074,7 +1074,7 @@ Primary optimisation: **calls + qualified form leads**, not page views.
 
 ## 10.4 Ad copy alignment
 
-Headlines should reuse page H1 language (`Släpvagnsservice på Värmdö`, `Byta hjullager`, `Båtsläp service`) so Quality Score landing-page experience is coherent.
+Headlines should reuse page H1 language (`Släpvagnsservice på Värmdö`, `Byta hjullager`, `båttrailer service`) so Quality Score landing-page experience is coherent.
 
 ---
 
@@ -1165,7 +1165,7 @@ SMTP from serverless is brittle. Resend is HTTP, designed for this.
 | Telefonnummer | `phone` | Yes | Normalize Swedish numbers; allow `07…`, `08…`, `+46…` |
 | E-post | `email` | No | If present, must be a valid email |
 | Registreringsnummer | `regNumber` | No | Uppercase, strip spaces; do not over-validate (trailers + unregistered frames exist) |
-| Typ av släp | `trailerType` | Yes | `<select>`: `Båtsläp`, `Släpkärra`, `Maskinsläp`, `Hästtransport`, `Annat` |
+| Typ av släp | `trailerType` | Yes | `<select>`: `båttrailer`, `Släpkärra`, `Maskinsläp`, `Hästtransport`, `Annat` |
 | Vad behöver du hjälp med? | `message` | Yes | 10–2000 chars |
 | Lägg till bilder | `photos` | No | Max 3, image only |
 | Website (honeypot) | `company` | Must be empty | `autocomplete="off"`, visually hidden, not `display:none` alone if it hurts a11y — use the `aria-hidden` + off-screen pattern and `tabindex="-1"` |
@@ -1492,7 +1492,7 @@ Target **WCAG 2.2 AA** where practical.
 
 ## 16.5 Images and names
 
-- Informative photos: Swedish alt (`Båtsläp på ramper i verkstaden`)  
+- Informative photos: Swedish alt (`båttrailer på ramper i verkstaden`)  
 - Decorative gallery extras: empty alt only if truly decorative  
 - SVG icons in buttons: `aria-hidden` + text, or `aria-label` if icon-only (`Ring`)
 

@@ -25,15 +25,15 @@ export type Service = {
 export const services: Service[] = [
   {
     slug: 'batslap-service',
-    navLabel: 'Båtsläp',
-    cardTitle: 'Båtsläp',
+    navLabel: 'båttrailer',
+    cardTitle: 'båttrailer',
     cardBlurb: 'Rullar, vinsch, stödhjul, lager, bromsar och belysning.',
-    h1: 'Service och reparation av båtsläp',
-    title: 'Båtsläp service på Värmdö',
+    h1: 'Service och reparation av båttrailer',
+    title: 'båttrailer service på Värmdö',
     description:
-      'Service av båtsläp på Värmdö: rullar, vinsch, stödhjul, hjullager, bromsar och belysning. Lämna gärna trailern när båten är inne.',
+      'Service av båttrailer på Värmdö: rullar, vinsch, stödhjul, hjullager, bromsar och belysning. Lämna gärna trailern när båten är inne.',
     heroLead:
-      'Båtsläp slits extra hårt av vatten, salt och ramper. Vi går igenom trailern i verkstaden på Värmdö.',
+      'båttrailer slits extra hårt av vatten, salt och ramper. Vi går igenom trailern i verkstaden på Värmdö.',
     sections: {
       symptomsTitle: 'Vanliga tecken på att trailern behöver ses över',
       symptoms: [
@@ -43,7 +43,7 @@ export const services: Service[] = [
         'stödhjul som kärvar eller sitter löst',
         'Belysning som slocknar när släpet varit i vattnet',
       ],
-      whatWeDoTitle: 'Vad vi går igenom på ett båtsläp',
+      whatWeDoTitle: 'Vad vi går igenom på ett båttrailer',
       whatWeDo: [
         'Hjullager, nav och tätningar – särskilt efter körning från ramp',
         'Bromsar och påskjutare där släpet har broms',
@@ -59,7 +59,7 @@ export const services: Service[] = [
     },
     faqs: [
       {
-        q: 'Hur ofta bör hjullager på båtsläp kontrolleras?',
+        q: 'Hur ofta bör hjullager på båttrailer kontrolleras?',
         a: 'Efter varje säsong med mycket sjösättning är det klokt att kolla lager, fett och tätningar. Vatten och salt sliter snabbare än på ett vanligt släp som bara rullar på asfalt. Hör av dig om det låter, glappar eller har gått varmt.',
       },
       {
@@ -76,7 +76,7 @@ export const services: Service[] = [
       },
     ],
     relatedSlugs: ['hjullager-slapvagn', 'bromsservice-slapvagn', 'el-belysning-slapvagn'],
-    schemaServiceType: 'Båtsläp service',
+    schemaServiceType: 'båttrailer service',
     adsGroup: 'Boat trailer',
   },
   {
@@ -87,7 +87,7 @@ export const services: Service[] = [
     h1: 'Hjullager och nav till släpvagn',
     title: 'Byta hjullager på släpvagn',
     description:
-      'Vi byter hjullager, nav och tätningar på släpvagnar och båtsläp. Om släpet låter, glappar eller går trögt – hör av dig.',
+      'Vi byter hjullager, nav och tätningar på släpvagnar och båttrailer. Om släpet låter, glappar eller går trögt – hör av dig.',
     heroLead:
       'Låter det, glappar det eller har lagret skurit? Vi byter hjullager och nav i verkstaden på Värmdö.',
     sections: {
@@ -109,7 +109,7 @@ export const services: Service[] = [
       ],
       notes: [
         'Om det ylar, har tydligt glapp eller har skurit ska du inte dra släpet. Ring oss i stället.',
-        'Båtsläp som backas i vatten behöver oftare tillsyn av lager och tätningar.',
+        'båttrailer som backas i vatten behöver oftare tillsyn av lager och tätningar.',
       ],
     },
     faqs: [
@@ -119,7 +119,7 @@ export const services: Service[] = [
       },
       {
         q: 'Kan ni byta hjullager på alla fabrikat?',
-        a: 'Vi tar emot de flesta vanliga släp och båtsläp. Ta med registreringsnummer och gärna märke om du har det, så kan vi kolla upp lager innan du kommer.',
+        a: 'Vi tar emot de flesta vanliga släp och båttrailer. Ta med registreringsnummer och gärna märke om du har det, så kan vi kolla upp lager innan du kommer.',
       },
       {
         q: 'Måste båda sidor bytas?',
@@ -142,7 +142,7 @@ export const services: Service[] = [
     h1: 'Bromsar och påskjutare till släpvagn',
     title: 'Bromsservice för släpvagn',
     description:
-      'Service av påskjutsbroms, bromsvajrar och parkeringsbroms på släpvagnar och båtsläp. Vi justerar, felsöker och reparerar.',
+      'Service av påskjutsbroms, bromsvajrar och parkeringsbroms på släpvagnar och båttrailer. Vi justerar, felsöker och reparerar.',
     heroLead:
       'Problem med bromsarna eller påskjaren? Vi hjälper dig att felsöka, serva och reparera bromsar, vajrar och påskjutsbroms på släpvagnar och trailers i vår verkstad på Värmdö.',
     sections: {
@@ -176,8 +176,8 @@ export const services: Service[] = [
         a: 'Ja. Vajrar som kärvar eller är frätta är ett vanligt jobb, särskilt på släp som står ute.',
       },
       {
-        q: 'Tar ni båtsläp med bromsar?',
-        a: 'Ja. Vatten och salt sliter extra på bromsar och vajrar på båtsläp.',
+        q: 'Tar ni båttrailer med bromsar?',
+        a: 'Ja. Vatten och salt sliter extra på bromsar och vajrar på båttrailer.',
       },
       {
         q: 'Behöver jag lämna släpet hela dagen?',
@@ -196,7 +196,7 @@ export const services: Service[] = [
     h1: 'El och belysning till släpvagn',
     title: 'El och belysning på släpvagn',
     description:
-      'Felsökning av belysning, släpkontakt, jordfel och kablar på släpvagnar och båtsläp. Vi hittar felet och lagar det.',
+      'Felsökning av belysning, släpkontakt, jordfel och kablar på släpvagnar och båttrailer. Vi hittar felet och lagar det.',
     heroLead:
       'En lampa släckt, säkring som går eller släpkontakt som krånglar. Vi felsöker elen på släpet.',
     sections: {
@@ -235,7 +235,7 @@ export const services: Service[] = [
       },
       {
         q: 'Kan korrosion i kontakten vara orsaken?',
-        a: 'Ja, särskilt på släp som står ute eller båtsläp som kommer nära vatten. Kontakt och jord är första stället vi tittar.',
+        a: 'Ja, särskilt på släp som står ute eller båttrailer som kommer nära vatten. Kontakt och jord är första stället vi tittar.',
       },
     ],
     relatedSlugs: ['infor-besiktning', 'batslap-service', 'bromsservice-slapvagn'],
@@ -260,7 +260,7 @@ export const services: Service[] = [
         'Stänkskärmar som släppt eller spruckit',
         'Stödben och stöd som slakat',
         'Mindre sprickor i ram och tvärbalkar',
-        'Fästen till vinsch, rullar eller stöttor på båtsläp',
+        'Fästen till vinsch, rullar eller stöttor på båttrailer',
       ],
       whatWeDoTitle: 'Hur vi jobbar',
       whatWeDo: [

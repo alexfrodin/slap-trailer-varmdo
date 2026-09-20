@@ -20,7 +20,7 @@ export function localBusinessNode() {
     '@id': businessId(),
     name: site.brandName,
     description:
-      'Service och reparation av släpvagnar och båtsläp på Värmdö. Hjullager, bromsar, el, svetsning och kontroll inför besiktning.',
+      'Service och reparation av släpvagnar och båttrailer på Värmdö. Hjullager, bromsar, el, svetsning och kontroll inför besiktning.',
     url: site.url,
     telephone: isPlaceholder(site.phoneE164) ? undefined : site.phoneE164,
     email: isPlaceholder(site.email) ? undefined : site.email,
