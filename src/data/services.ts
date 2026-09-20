@@ -64,11 +64,7 @@ export const services: Service[] = [
       },
       {
         q: 'Behöver trailern vara tom?',
-        a: 'Det är enklare att arbeta när båten är av. Om båten ändå är inne på service kan vi ofta ta trailern samtidigt. Säg till när du ringer så stämmer vi av.',
-      },
-      {
-        q: 'Kan ni se över trailern medan båten är på service?',
-        a: 'Ja, det är just det vi vill åt. Lämna trailern när båten ändå är inne, så går vi igenom lager, bromsar, el, vinsch och rullar.',
+        a: 'Det är enklast att arbeta med trailern när båten är av. Hör av dig så stämmer vi av vad som behöver göras och hur vi löser det på smidigast sätt.',
       },
     ],
     relatedSlugs: ['hjullager-slapvagn', 'bromsservice-slapvagn', 'el-belysning-slapvagn'],
