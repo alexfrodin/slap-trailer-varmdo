@@ -101,7 +101,7 @@ export const services: Service[] = [
       ],
       notes: [
         'Om det ylar, har tydligt glapp eller har skurit ska du inte dra släpet. Ring oss i stället.',
-        'båttrailer som backas i vatten behöver oftare tillsyn av lager och tätningar.',
+        'Båttrailer som backas i vatten behöver oftare tillsyn av lager och tätningar.',
       ],
     },
     faqs: [
