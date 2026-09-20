@@ -8,6 +8,7 @@ import Hero from '../components/Hero.astro';
 import HowItWorks from '../components/HowItWorks.astro';
 import LocationBlock from '../components/LocationBlock.astro';
 import ServicesGrid from '../components/ServicesGrid.astro';
+import heroImage from '../assets/photos/batslap-hero.jpg';
 import { cta, home } from '../data/home';
 import { site } from '../data/site';
 import { homeCatalogNode, localBusinessNode, websiteNode } from '../lib/schema';
@@ -22,7 +23,14 @@ import { homeCatalogNode, localBusinessNode, websiteNode } from '../lib/schema';
     websiteNode(),
   ]}
 >
-  <Hero eyebrow={home.eyebrow} heading={home.h1} lead={home.lead} micro={`${home.heroMicro} · ${site.address.city}`}>
+  <Hero
+    eyebrow={home.eyebrow}
+    heading={home.h1}
+    lead={home.lead}
+    micro={`${site.address.street}, ${site.address.city}`}
+    image={heroImage}
+    imageAlt="Båtsläp på kaj vid vattnet"
+  >
     <CTAButton slot="ctas" href="#forfragan" event="cta_boka">{cta.book}</CTAButton>
     <CTAButton slot="ctas" href={`tel:${site.phoneE164}`} variant="secondary" event="tel_click">
       {cta.call}

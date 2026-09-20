@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import TrailerMark from './icons/TrailerMark.astro';
 
 interface Props {
@@ -7,15 +9,17 @@ interface Props {
   lead: string;
   size?: 'large' | 'compact';
   micro?: string;
+  image?: ImageMetadata;
+  imageAlt?: string;
 }
 
-const { eyebrow, heading, lead, size = 'large', micro } = Astro.props;
+const { eyebrow, heading, lead, size = 'large', micro, image, imageAlt = '' } = Astro.props;
 const large = size === 'large';
 ---
 
 <section class:list={['border-b border-line bg-elevated', large ? 'py-10 md:py-16' : 'py-8 md:py-12']}>
   <div class:list={['wrap grid items-center gap-8', large && 'md:grid-cols-2']}>
-    <div>
+    <div class:list={[large && image && 'order-2 md:order-1']}>
       {eyebrow && (
         <p class="mb-3 text-sm font-semibold uppercase tracking-wide text-accent">{eyebrow}</p>
       )}
@@ -28,7 +32,18 @@ const large = size === 'large';
       </div>
       {micro && <p class="mt-4 text-sm text-muted">{micro}</p>}
     </div>
-    {large && (
+    {large && image && (
+      <div class="order-1 overflow-hidden md:order-2 md:min-h-80">
+        <Image
+          src={image}
+          alt={imageAlt}
+          widths={[480, 768, 1100]}
+          sizes="(min-width: 768px) 50vw, 100vw"
+          class="aspect-[4/3] h-full w-full object-cover"
+        />
+      </div>
+    )}
+    {large && !image && (
       <div class="flex items-center justify-center bg-accent p-8 text-[#d7e3de] md:min-h-80">
         <TrailerMark class="w-full max-w-md" />
       </div>
