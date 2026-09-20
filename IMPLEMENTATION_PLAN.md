@@ -282,7 +282,7 @@ Shared **primary CTAs** unless a page says otherwise:
 - Vilka släp tar ni emot?
 - Behöver jag boka tid?
 - Kan ni serva och reparera båtsläp?
-- Tar ni emot släp från Nacka och Ingarö?
+- Kan ni hjälpa till ute på plats?
 
 ---
 
@@ -686,7 +686,7 @@ Do not list 20 islands. Do not imply a service-area business that drives to the 
 `id="forfragan"`
 
 Heading: `Skicka en serviceförfrågan`  
-Lead: `Berätta kort vad som är fel. Vi ringer upp.`
+Lead: `Beskriv kort vad du behöver hjälp med.`
 
 Then the form (Section 12). Beside it on **desktop only**: phone card (“Snabbare att ringa?” + large `tel:`).
 

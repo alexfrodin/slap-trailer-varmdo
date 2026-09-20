@@ -58,7 +58,7 @@ export const home = {
   ],
   areaHeading: 'Värmdö med omnejd – och hjälp ute på plats',
   formHeading: 'Skicka en serviceförfrågan',
-  formLead: 'Berätta kort vad som är fel. Vi ringer upp.',
+  formLead: 'Beskriv kort vad du behöver hjälp med.',
   callAsideHeading: 'Snabbare att ringa?',
   locationHeading: 'Hitta hit',
   faqs: [
@@ -75,8 +75,8 @@ export const home = {
       a: 'Ja. Vi hjälper till med service, felsökning och reparation av båtsläp, bland annat hjullager, bromsar, belysning, vinsch, rullar och stödhjul.',
     },
     {
-      q: 'Tar ni emot släp från Nacka och Ingarö?',
-      a: 'Du är varmt välkommen till vår verkstad på Värmdö oavsett var du kommer ifrån. Hör gärna av dig innan du åker, så kan vi stämma av vad som behöver göras och hjälpa dig på smidigast möjliga sätt. För vissa typer av arbeten kan vi även komma ut och hjälpa till på plats.',
+      q: 'Kan ni hjälpa till ute på plats?',
+      a: 'Ja, för vissa typer av service- och reparationsarbeten kan vi komma ut och hjälpa till på plats. Hör av dig och beskriv vad du behöver hjälp med, så ser vi vad som fungerar bäst.',
     },
   ],
 };
