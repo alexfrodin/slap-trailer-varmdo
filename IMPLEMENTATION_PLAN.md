@@ -649,7 +649,7 @@ Three concrete points, not values-theatre:
 
 - Service och reparation på plats — lager, bromsar, el och svets.  
 - Båtsläp är en naturlig del av arbetet, inte ett sidospår.  
-- Du pratar med verkstaden på Värmdö.
+- Lokal service på Värmdö på Värmdö.
 
 If the existing boat company is public, one sentence may mention it **without** turning this into that company’s site.
 

@@ -9,7 +9,7 @@ export const home = {
   trust: [
     'Lokal verkstad på Värmdö',
     'Trailer, släp, hästsläp och maskinsläp',
-    'Du pratar med verkstaden',
+    'Lokal service på Värmdö',
   ],
   servicesHeading: 'Vad vi hjälper dig med',
   boat: {
