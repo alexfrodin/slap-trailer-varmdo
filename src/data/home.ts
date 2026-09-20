@@ -8,7 +8,7 @@ export const home = {
     'Service och reparation av släpvagnar och båtsläp på Värmdö. Hjullager, bromsar, el och svets. Ring eller skicka en förfrågan.',
   trust: [
     'Lokal verkstad på Värmdö',
-    'Båtsläp och vanliga släp',
+    'Trailer, släp, hästsläp och maskinsläp',
     'Du pratar med verkstaden',
   ],
   servicesHeading: 'Vad vi hjälper dig med',

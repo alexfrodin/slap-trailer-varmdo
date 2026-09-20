@@ -45,20 +45,14 @@ export const site = {
       closes: '16:00',
     },
   ] as OpeningHour[],
-  serviceAreaNote:
-    'Vår verkstad finns på Värmdö, men alla är självklart välkomna oavsett varifrån du kommer. Vi hjälper kunder från hela närområdet och kan även utföra vissa service- och reparationsarbeten ute på plats när det passar bättre än att ta släpet till verkstaden.
+  serviceAreaNote: `Vår verkstad finns på Värmdö, men alla är självklart välkomna oavsett varifrån du kommer. Vi hjälper kunder från hela närområdet och kan även utföra vissa service- och reparationsarbeten ute på plats när det passar bättre än att ta släpet till verkstaden.
 
-Hör av dig och berätta vad du behöver hjälp med, så hittar vi en lösning som passar.',
+Hör av dig och berätta vad du behöver hjälp med, så hittar vi en lösning som passar.`,
   social: {
     facebook: undefined as string | undefined,
     instagram: undefined as string | undefined,
   },
   defaultOgImage: '/og-default.jpg',
-  form: {
-    maxPhotos: 3,
-    maxPhotoBytes: 1_000_000,
-    acceptedMime: ['image/jpeg', 'image/png', 'image/webp'] as const,
-  },
   reviews: [] as Array<{ author: string; quote: string }>,
 };
 

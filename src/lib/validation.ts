@@ -1,5 +1,3 @@
-import { site } from '../data/site';
-
 export const trailerTypes = [
   'Båtsläp',
   'Släpkärra',
@@ -82,12 +80,4 @@ export function isTooFast(input: ContactInput, minMs = 3000): boolean {
   const started = Number(input.startedAt);
   if (Number.isNaN(started)) return true;
   return Date.now() - started < minMs;
-}
-
-export function isAllowedPhoto(file: File): boolean {
-  if (!site.form.acceptedMime.includes(file.type as (typeof site.form.acceptedMime)[number])) {
-    return false;
-  }
-  if (file.size > 1_200_000) return false;
-  return file.name.length > 0;
 }

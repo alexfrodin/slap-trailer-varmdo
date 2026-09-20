@@ -584,7 +584,7 @@ A single row, not icons-with-lorem.
 **Mobile:** stacked lines. **Desktop:** 3 columns.
 
 - `Lokal verkstad på Värmdö`
-- `Båtsläp och vanliga släp`
+- `Trailer, släp, hästsläp och maskinsläp`
 - `Ring [PHONE]`
 
 This replaces a fluffy “why us” above the fold. Proof comes later with photos.

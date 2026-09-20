@@ -144,7 +144,7 @@ export const services: Service[] = [
     description:
       'Service av påskjutsbroms, bromsvajrar och parkeringsbroms på släpvagnar och båtsläp. Vi justerar, felsöker och reparerar.',
     heroLead:
-      'Släpet drar snett, bromsar dåligt eller kärvar. Vi ser över påskjutare, vajrar och bromsar på Värmdö.',
+      'Problem med bromsarna eller påskjaren? Vi hjälper dig att felsöka, serva och reparera bromsar, vajrar och påskjutsbroms på släpvagnar och trailers i vår verkstad på Värmdö.',
     sections: {
       symptomsTitle: 'Tecken på att bromsarna behöver service',
       symptoms: [
@@ -277,7 +277,7 @@ export const services: Service[] = [
     faqs: [
       {
         q: 'Kan ni svetsa mitt släp?',
-        a: 'Ofta ja, på fästen, skärmar och liknande. Ta en bild och skicka med förfrågan, eller ring, så kan vi säga mer.',
+        a: 'Ofta ja, på fästen, skärmar och liknande. Ring eller skicka en förfrågan, så kan vi säga mer.',
       },
       {
         q: 'Svetsar ni rostskador?',

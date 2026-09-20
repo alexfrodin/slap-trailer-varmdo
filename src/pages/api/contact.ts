@@ -1,9 +1,7 @@
 import type { APIRoute } from 'astro';
 import { Resend } from 'resend';
-import { site } from '../../data/site';
 import { verifyTurnstile } from '../../lib/turnstile';
 import {
-  isAllowedPhoto,
   isHoneypot,
   isTooFast,
   parseContactForm,
@@ -76,19 +74,6 @@ export const POST: APIRoute = async ({ request }) => {
     return fail('spam');
   }
 
-  const photos = form
-    .getAll('photos')
-    .filter((item): item is File => item instanceof File && item.size > 0);
-
-  if (photos.length > site.form.maxPhotos) {
-    return fail('validering');
-  }
-
-  const totalBytes = photos.reduce((sum, file) => sum + file.size, 0);
-  if (totalBytes > 3_500_000 || photos.some((file) => !isAllowedPhoto(file))) {
-    return fail('validering');
-  }
-
   const apiKey = import.meta.env.RESEND_API_KEY;
   const to = import.meta.env.CONTACT_TO_EMAIL;
   const from = import.meta.env.CONTACT_FROM_EMAIL;
@@ -125,13 +110,6 @@ export const POST: APIRoute = async ({ request }) => {
       .join('')}
   `;
 
-  const attachments = await Promise.all(
-    photos.map(async (file, index) => ({
-      filename: file.name || `foto-${index + 1}.jpg`,
-      content: Buffer.from(await file.arrayBuffer()),
-    })),
-  );
-
   try {
     const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
@@ -141,7 +119,6 @@ export const POST: APIRoute = async ({ request }) => {
       text,
       html,
       replyTo: input.email || undefined,
-      attachments: attachments.length > 0 ? attachments : undefined,
     });
     if (error) {
       console.error('Resend error');
