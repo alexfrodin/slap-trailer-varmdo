@@ -33,20 +33,20 @@ export const services: Service[] = [
     description:
       'Service av båttrailer på Värmdö: rullar, vinsch, stödhjul, hjullager, bromsar och belysning. Lämna gärna trailern när båten är inne.',
     heroLead:
-      'båttrailer slits extra hårt av vatten, salt och ramper. Vi går igenom trailern i verkstaden på Värmdö.',
+      'båttrailer utsätts för mycket slitage från vatten, rampkörning och regelbunden användning. Vi hjälper dig med service, felsökning och reparation i vår verkstad på Värmdö.',
     sections: {
       symptomsTitle: 'Vanliga tecken på att trailern behöver ses över',
       symptoms: [
-        'Hjul som låter, glappar eller går trögt efter sjösättning',
+        'Hjul som låter, glappar eller går trögt ',
         'Rullar som inte snurrar eller har spruckit',
-        'Vinsch som slirar, hakar eller har sliten lina',
-        'stödhjul som kärvar eller sitter löst',
-        'Belysning som slocknar när släpet varit i vattnet',
+        'Vinsch som slirar, kärvar eller har sliten lina',
+        'Stödhjul som kärvar eller sitter löst',
+        'Glapp, fel eller andra problem med släpets belysning och elsystem',
       ],
       whatWeDoTitle: 'Vad vi går igenom på ett båttrailer',
       whatWeDo: [
-        'Hjullager, nav och tätningar – särskilt efter körning från ramp',
-        'Bromsar och påskjutare där släpet har broms',
+        'Hjullager, nav och tätningar',
+        'Bromsar och påskjutsbroms där släpet har broms',
         'Belysning, släpkontakt och jordfel',
         'Vinsch, lina och fästen',
         'Rullar, stöttor och stödhjul',
@@ -139,7 +139,7 @@ export const services: Service[] = [
     navLabel: 'Bromsar',
     cardTitle: 'Bromsar & påskjutsbroms',
     cardBlurb: 'Påskjutsbroms, vajrar, bromsbackar och parkeringsbroms.',
-    h1: 'Bromsar och påskjutare till släpvagn',
+    h1: 'Bromsar och påskjutsbroms till släpvagn',
     title: 'Bromsservice för släpvagn',
     description:
       'Service av påskjutsbroms, bromsvajrar och parkeringsbroms på släpvagnar och båttrailer. Vi justerar, felsöker och reparerar.',
@@ -152,7 +152,7 @@ export const services: Service[] = [
         'Dålig eller ingen bromsverkan',
         'Parkeringsbromsen tar inte eller släpper inte',
         'Vajrar som kärvar, är frätta eller har släppt',
-        'Påskjutaren går trögt eller tar inte i',
+        'påskjutsbromsn går trögt eller tar inte i',
       ],
       whatWeDoTitle: 'Vad vi gör',
       whatWeDo: [
@@ -169,7 +169,7 @@ export const services: Service[] = [
     faqs: [
       {
         q: 'Hur vet jag att påskjutsbromsen är dålig?',
-        a: 'Släpet kan nicka, dra snett, rulla på vid inbromsning eller ha en påskjutare som inte går lätt. Ibland tar handbromsen inte heller.',
+        a: 'Släpet kan nicka, dra snett, rulla på vid inbromsning eller ha en påskjutsbroms som inte går lätt. Ibland tar handbromsen inte heller.',
       },
       {
         q: 'Kan ni byta bromsvajrar?',
@@ -319,7 +319,7 @@ export const services: Service[] = [
       whatWeDoTitle: 'Vad vi kontrollerar',
       whatWeDo: [
         'Belysning och släpkontakt',
-        'Bromsar och påskjutare där det finns',
+        'Bromsar och påskjutsbroms där det finns',
         'Däck och hjul',
         'Synlig rost, fästen och säkerhetsdetaljer',
         'Lagning av det som behöver åtgärdas innan du åker på besiktning',

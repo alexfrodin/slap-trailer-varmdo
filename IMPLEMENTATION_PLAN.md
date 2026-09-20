@@ -363,7 +363,7 @@ Shared **primary CTAs** unless a page says otherwise:
 
 **Title:** `Bromsservice för släpvagn | Släp & Trailer Värmdö`  
 **Meta:** `Service av påskjutsbroms, bromsvajrar och parkeringsbroms på släpvagnar och båttrailer. Vi justerar, felsöker och reparerar.`  
-**H1:** `Bromsar och påskjutare till släpvagn`
+**H1:** `Bromsar och påskjutsbroms till släpvagn`
 
 **Sections:**
 
