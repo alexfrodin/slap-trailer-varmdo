@@ -152,7 +152,7 @@ export const services: Service[] = [
         'Byter bromsvajrar, bromsbackar och andra slitdelar',
         'Ser över parkeringsbroms',
         'Kontrollerar att hjulen rullar fritt efter justering',
-        'Kombinerar gärna med lagerkontroll om släpet ändå är uppe',
+        'Vi kan även kontrollera hjullagren i samband med servicen.',
       ],
       notes: [
         'Bromsar är säkerhet. Om släpet inte bromsar som det ska ska du inte lasta och köra. Ring oss.',
