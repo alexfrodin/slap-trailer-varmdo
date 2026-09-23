@@ -32,6 +32,8 @@ Replace every `[PLACEHOLDER]` in `src/data/site.ts` before launch:
 
 Environment variables are documented in `.env.example`. The contact form needs Resend and Cloudflare Turnstile in production. In `astro dev`, submissions can succeed without email so the flow can be tested.
 
+Google Ads conversion tracking and consent are described in `docs/google-ads.md`. Leave the Google IDs empty in local development.
+
 ## Deploy
 
 Connect the GitHub repo to Vercel (Astro preset, Node 22). Set production env vars and `PUBLIC_SITE_URL` to the live origin without a trailing slash.

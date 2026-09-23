@@ -1,0 +1,61 @@
+---
+import { ga4MeasurementId, googleTrackingEnabled } from '../lib/google-config';
+---
+
+{googleTrackingEnabled && (
+  <div
+    id="ads-consent"
+    class="consent-bar fixed inset-x-0 z-50 hidden border-t border-line bg-elevated px-4 pt-4 shadow-[0_-8px_24px_rgba(28,30,27,0.06)] pb-[max(1rem,env(safe-area-inset-bottom))]"
+    role="dialog"
+    aria-labelledby="consent-title"
+    aria-hidden="true"
+  >
+    <div class="wrap max-h-[70vh] overflow-y-auto">
+      <h2 id="consent-title" class="text-base font-semibold">Mätning av annonser</h2>
+      <div data-consent-choice>
+        <p class="mt-2 max-w-3xl text-sm text-muted">
+          Får vi mäta om annonser leder till förfrågningar och samtal? Vi använder då Google Ads.
+          Webbplatsen, formuläret och telefonnumren fungerar även om du avvisar.
+          {ga4MeasurementId && ' Godkänn omfattar också besöksstatistik. Det går att välja bort under Inställningar.'}
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <button type="button" class="inline-flex min-h-11 min-w-28 items-center justify-center border border-ink px-4 font-semibold" data-ads-deny>
+            Avvisa
+          </button>
+          <button type="button" class="inline-flex min-h-11 min-w-28 items-center justify-center bg-cta px-4 font-semibold text-cta-ink" data-ads-accept>
+            Godkänn
+          </button>
+          <button type="button" class="inline-flex min-h-11 min-w-28 items-center justify-center border border-ink px-4 font-semibold" data-ads-settings>
+            Inställningar
+          </button>
+        </div>
+      </div>
+      <div data-consent-settings hidden>
+        <p class="mt-2 max-w-3xl text-sm text-muted">
+          Annonsmätning visar om en skickad förfrågan eller ett klick på telefonnumret kom efter en annons.
+          Namn, telefon, e-post, registreringsnummer och meddelanden skickas inte till Google.
+        </p>
+        <div class="mt-4 grid gap-3">
+          <label class="flex min-h-11 items-center gap-3">
+            <input type="checkbox" data-consent-ads class="h-5 w-5" />
+            <span>Tillåt annonsmätning</span>
+          </label>
+          {ga4MeasurementId && (
+            <label class="flex min-h-11 items-center gap-3">
+              <input type="checkbox" data-consent-analytics class="h-5 w-5" />
+              <span>Tillåt besöksstatistik (Google Analytics)</span>
+            </label>
+          )}
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <button type="button" class="inline-flex min-h-11 min-w-28 items-center justify-center border border-ink px-4 font-semibold" data-ads-deny>
+            Avvisa
+          </button>
+          <button type="button" class="inline-flex min-h-11 min-w-28 items-center justify-center bg-cta px-4 font-semibold text-cta-ink" data-ads-save>
+            Spara
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+)}

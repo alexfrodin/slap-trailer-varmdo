@@ -55,6 +55,7 @@ const { bookHref } = Astro.props;
     <div class="flex items-center gap-2 sm:gap-3">
       <PhoneLink
         class="hidden items-center gap-2 font-semibold text-accent no-underline md:inline-flex"
+        location="header"
       >
         <IconPhone />
         {site.phoneDisplay}
@@ -62,6 +63,7 @@ const { bookHref } = Astro.props;
       <PhoneLink
         class="inline-flex h-11 w-11 items-center justify-center rounded border border-line text-accent md:hidden"
         display=""
+        location="header"
       >
         <span class="sr-only">{cta.call}</span>
         <IconPhone />

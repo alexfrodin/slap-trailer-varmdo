@@ -5,6 +5,7 @@ interface Props {
   type?: 'button' | 'submit';
   class?: string;
   event?: string;
+  phoneLocation?: string;
 }
 
 const {
@@ -13,6 +14,7 @@ const {
   type = 'button',
   class: className = '',
   event,
+  phoneLocation,
 } = Astro.props;
 
 const variants = {
@@ -36,6 +38,7 @@ const classes = [
     href={href}
     class={classes}
     data-plausible-event={event}
+    data-phone-location={href?.startsWith('tel:') ? phoneLocation : undefined}
   >
     <slot />
   </a>

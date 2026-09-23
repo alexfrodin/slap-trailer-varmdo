@@ -73,6 +73,16 @@ body.overflow-hidden {
   overflow: hidden;
 }
 
+.consent-bar {
+  bottom: 0;
+}
+
+@media (max-width: 767px) {
+  body:not(.no-sticky):not(.hide-sticky) .consent-bar {
+    bottom: calc(3.5rem + env(safe-area-inset-bottom));
+  }
+}
+
 :focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 3px;

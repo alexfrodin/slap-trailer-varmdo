@@ -18,7 +18,7 @@ import { site } from '../data/site';
       </p>
       <div class="mt-6 flex flex-col gap-3 sm:flex-row">
         <CTAButton href="/">Till startsidan</CTAButton>
-        <CTAButton href={`tel:${site.phoneE164}`} variant="secondary" event="tel_click">
+        <CTAButton href={`tel:${site.phoneE164}`} variant="secondary" event="tel_click" phoneLocation="other">
           {cta.call}
         </CTAButton>
       </div>

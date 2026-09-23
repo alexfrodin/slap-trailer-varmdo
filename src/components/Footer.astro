@@ -2,6 +2,7 @@
 import { legalLine, site } from '../data/site';
 import { nav } from '../data/home';
 import { footerExtraLinks, serviceLinks } from '../data/navigation';
+import { googleTrackingEnabled } from '../lib/google-config';
 import PhoneLink from './PhoneLink.astro';
 ---
 
@@ -26,7 +27,7 @@ import PhoneLink from './PhoneLink.astro';
     <div>
       <p class="mb-3 font-semibold">{nav.contact}</p>
       <p>
-        <PhoneLink class="font-semibold text-accent no-underline" />
+        <PhoneLink class="font-semibold text-accent no-underline" location="footer" />
       </p>
       <p class="mt-2 text-muted">
         {site.address.street}<br />
@@ -45,6 +46,17 @@ import PhoneLink from './PhoneLink.astro';
     </div>
   </div>
   <div class="border-t border-line">
-    <p class="wrap py-5 text-sm text-muted">{legalLine()}</p>
+    <div class="wrap flex flex-col gap-2 py-5 sm:flex-row sm:items-center sm:justify-between">
+      <p class="text-sm text-muted">{legalLine()}</p>
+      {googleTrackingEnabled && (
+        <button
+          type="button"
+          class="self-start text-sm text-muted underline underline-offset-2 sm:shrink-0"
+          data-consent-open
+        >
+          Cookie-inställningar
+        </button>
+      )}
+    </div>
   </div>
 </footer>

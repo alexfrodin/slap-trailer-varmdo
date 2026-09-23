@@ -1,5 +1,6 @@
 ---
 import Analytics from '../components/Analytics.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import JsonLd from '../components/JsonLd.astro';
@@ -47,5 +48,10 @@ const showSticky = pathname !== '/tack';
     </main>
     <Footer />
     {showSticky && <StickyMobileCTA bookHref={bookHref} />}
+    <ConsentBanner />
+    <script>
+      import { initTracking } from '../lib/analytics';
+      initTracking();
+    </script>
   </body>
 </html>

@@ -5,7 +5,11 @@ interface ImportMetaEnv {
   readonly PUBLIC_TURNSTILE_SITE_KEY?: string;
   readonly PUBLIC_PLAUSIBLE_DOMAIN?: string;
   readonly PUBLIC_GOOGLE_ADS_ID?: string;
+  readonly PUBLIC_GOOGLE_ADS_LEAD_CONVERSION_LABEL?: string;
+  readonly PUBLIC_GOOGLE_ADS_PHONE_CONVERSION_LABEL?: string;
+  /** @deprecated Fallback for PUBLIC_GOOGLE_ADS_LEAD_CONVERSION_LABEL */
   readonly PUBLIC_GOOGLE_ADS_CONVERSION_LABEL?: string;
+  readonly PUBLIC_GA4_MEASUREMENT_ID?: string;
   readonly RESEND_API_KEY?: string;
   readonly CONTACT_TO_EMAIL?: string;
   readonly CONTACT_FROM_EMAIL?: string;

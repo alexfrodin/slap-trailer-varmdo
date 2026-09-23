@@ -45,8 +45,10 @@ import { breadcrumbNode } from '../lib/schema';
       <p>
         Vi använder Vercel för drift av webbplatsen, Resend för att skicka
         mejl från formuläret, Cloudflare Turnstile för att hindra skräppost
-        och OpenStreetMap för kartan. Om du godkänner mätning av annonser kan
-        Google Ads användas för det.
+        och OpenStreetMap för kartan. Om du godkänner annonsmätning tar Google
+        emot att en förfrågan har skickats eller att ett telefonnummer har
+        klickats. Namn, telefon, e-post, registreringsnummer och meddelande
+        skickas inte till Google.
       </p>
 
       <h2 class="text-xl font-semibold">Hur länge vi sparar</h2>
@@ -57,10 +59,34 @@ import { breadcrumbNode } from '../lib/schema';
 
       <h2 class="text-xl font-semibold">Kakor och mätning</h2>
       <p>
-        Webbplatsen använder i grunden ingen reklam- eller analyskaka. Vi kan
-        använda cookiefri statistik (Vercel Analytics och eventuellt Plausible).
-        Om Google Ads-mätning är på slås den på först efter att du godkänt det.
-        Turnstile kan sätta en kaka som behövs för att skydda formuläret.
+        Vi använder Vercel Analytics, och om det är aktiverat Plausible, för
+        enkel besöksstatistik utan kakor. Cloudflare Turnstile kan sätta en
+        kaka som behövs för att skydda formuläret mot skräppost.
+      </p>
+      <p>
+        Annonsmätning är avstängd tills du själv väljer. Om Google Ads är
+        aktiverat visar vi en ruta där du kan godkänna eller avvisa. Först
+        efter ett godkännande kan Google sätta kakor och mäta två saker: att
+        en serviceförfrågan har skickats, och att du klickat på ett
+        telefonnummer. Ett klick är inte samma sak som ett genomfört samtal.
+        Vi använder inte utökade konverteringar och skickar inte hashade
+        kunduppgifter till Google.
+      </p>
+      <p>
+        Ditt val sparas i webbläsaren så att frågan inte behöver ställas på
+        varje sida. När mätningen är aktiverad kan du ändra valet via
+        Cookie-inställningar i sidfoten. Avvisar du mätning fungerar formulär
+        och telefonlänkar som vanligt. Rättslig grund för annonsmätning är
+        samtycke (artikel 6.1.a GDPR).
+      </p>
+
+      <h2 class="text-xl font-semibold">Kampanjuppgifter</h2>
+      <p>
+        Om adressen du kom in på innehåller kampanjparametrar (utm) eller ett
+        Google-klick-id sparar vi dem tillfälligt i webbläsaren under besöket.
+        De kan följa med mejlet vi får när du skickar en förfrågan, så att vi
+        ser vilken annons som hörde ihop med den. De visas inte på sidan och
+        skickas inte som innehåll i annonsmätningen.
       </p>
 
       <h2 class="text-xl font-semibold">Dina rättigheter</h2>

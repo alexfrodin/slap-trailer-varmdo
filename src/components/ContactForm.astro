@@ -1,5 +1,6 @@
 ---
 import { cta, home } from '../data/home';
+import { ATTRIBUTION_KEYS } from '../lib/tracking';
 import { trailerTypes } from '../lib/validation';
 import CTAButton from './CTAButton.astro';
 
@@ -34,6 +35,9 @@ const turnstileKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
         data-contact-form
       >
         <input type="hidden" name="startedAt" data-started-at />
+        {ATTRIBUTION_KEYS.map((key) => (
+          <input type="hidden" name={key} value="" />
+        ))}
 
         <div class="hp" aria-hidden="true">
           <label for="company">Företag</label>
@@ -131,14 +135,19 @@ const turnstileKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 </section>
 
 <script>
+  import { bindContactFormTracking } from '../lib/analytics';
+
   const form = document.querySelector<HTMLFormElement>('[data-contact-form]');
   const started = form?.querySelector<HTMLInputElement>('[data-started-at]');
   if (started) started.value = String(Date.now());
 
   form?.querySelectorAll('input, textarea, select').forEach((field) => {
+    if (field instanceof HTMLInputElement && field.type === 'hidden') return;
     field.addEventListener('focus', () => document.body.classList.add('hide-sticky'));
     field.addEventListener('blur', () => document.body.classList.remove('hide-sticky'));
   });
+
+  bindContactFormTracking(form);
 </script>
 
 {turnstileKey && (

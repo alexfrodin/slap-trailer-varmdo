@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { Resend } from 'resend';
 import { verifyTurnstile } from '../../lib/turnstile';
+import { attributionEmailRows } from '../../lib/tracking';
 import {
   isHoneypot,
   isTooFast,
@@ -85,7 +86,7 @@ export const POST: APIRoute = async ({ request }) => {
         phone: input.phone,
         trailerType: input.trailerType,
       });
-      return redirectTo('/tack', request);
+      return redirectTo('/tack?skickad=1', request);
     }
     return fail('server');
   }
@@ -97,6 +98,7 @@ export const POST: APIRoute = async ({ request }) => {
     ['Registreringsnummer', input.regNumber || '–'],
     ['Typ av släp', input.trailerType],
     ['Meddelande', input.message],
+    ...attributionEmailRows(form),
   ];
 
   const text = rows.map(([label, value]) => `${label}: ${value}`).join('\n');
@@ -128,5 +130,5 @@ export const POST: APIRoute = async ({ request }) => {
     return fail('server');
   }
 
-  return redirectTo('/tack', request);
+  return redirectTo('/tack?skickad=1', request);
 };

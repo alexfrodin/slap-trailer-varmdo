@@ -47,7 +47,7 @@ const related = getRelatedServices(service);
 
   <Hero heading={service.h1} lead={service.heroLead} size="compact">
     <CTAButton slot="ctas" href="#forfragan" event="cta_boka">{cta.book}</CTAButton>
-    <CTAButton slot="ctas" href={`tel:${site.phoneE164}`} variant="secondary" event="tel_click">
+    <CTAButton slot="ctas" href={`tel:${site.phoneE164}`} variant="secondary" event="tel_click" phoneLocation="hero">
       {cta.call}
     </CTAButton>
   </Hero>
