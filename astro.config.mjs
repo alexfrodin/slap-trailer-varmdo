@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
 
-const siteUrl = process.env.PUBLIC_SITE_URL ?? 'https://slapochtrailervarmdo.se';
+const siteUrl = process.env.PUBLIC_SITE_URL ?? 'https://slaptrailer.se';
 
 export default defineConfig({
   site: siteUrl,

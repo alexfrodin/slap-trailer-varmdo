@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /tack
 
-Sitemap: https://slapochtrailervarmdo.se/sitemap-index.xml
+Sitemap: https://slaptrailer.se/sitemap-index.xml
